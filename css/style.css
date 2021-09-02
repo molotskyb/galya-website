@@ -168,6 +168,10 @@ html {
     @media only screen and (max-width: 50em) {
       .about__pic {
         grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__pic {
+        grid-column: 2 / span 8;
+        grid-row: 2 / 2; } }
   .about__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
@@ -182,6 +186,10 @@ html {
     @media only screen and (max-width: 50em) {
       .about__txt {
         grid-column: 3 / span 8; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__txt {
+        grid-column: 1/ -1;
+        grid-row: 3 / 3; } }
 
 .quot {
   grid-column: 4 / -4;
@@ -206,6 +214,10 @@ html {
     @media only screen and (max-width: 50em) {
       .tours__pic {
         grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__pic {
+        grid-column: 2 / span 4;
+        grid-row: 2 / 3; } }
   .tours__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
@@ -220,6 +232,10 @@ html {
     @media only screen and (max-width: 50em) {
       .tours__txt {
         grid-column: 3 / span 8; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__txt {
+        grid-column: 1/ -1;
+        grid-row: 3 / 3; } }
 
 .gallery-2 {
   grid-column: full-start / full-end;
@@ -285,6 +301,10 @@ html {
     @media only screen and (max-width: 50em) {
       .reviews__pic {
         grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__pic {
+        grid-column: 2 / span 4;
+        grid-row: 2 / 2; } }
   .reviews__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
@@ -297,13 +317,16 @@ html {
     justify-content: center; }
     .reviews__txt--1 {
       grid-column: 5 / span 5;
-      grid-row: 2 / span 1; }
+      grid-row: 3 / span 1; }
       @media only screen and (max-width: 50em) {
         .reviews__txt--1 {
           grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--1 {
+          grid-column: 1 / -1; } }
     .reviews__txt--2 {
       grid-column: 5 / span 5;
-      grid-row: 3 / span 1; }
+      grid-row: 4 / span 1; }
       @media only screen and (max-width: 50em) {
         .reviews__txt--2 {
           grid-column: 4 / span 8; } }
@@ -312,7 +335,7 @@ html {
           grid-column: 1 / -1; } }
     .reviews__txt--3 {
       grid-column: 5 / span 5;
-      grid-row: 4 / span 1; }
+      grid-row: 5 / span 1; }
       @media only screen and (max-width: 50em) {
         .reviews__txt--3 {
           grid-column: 4 / span 8; } }
@@ -321,7 +344,7 @@ html {
           grid-column: 1 / -1; } }
     .reviews__txt--4 {
       grid-column: 5 / span 5;
-      grid-row: 5 / span 1; }
+      grid-row: 6 / span 1; }
       @media only screen and (max-width: 50em) {
         .reviews__txt--4 {
           grid-column: 4 / span 8; } }
@@ -449,6 +472,10 @@ html {
   .reviews__img {
     max-height: 61vh;
     max-width: 25vw; }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .reviews__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
@@ -545,6 +572,10 @@ html {
       .about__img {
         max-height: 31vh;
         max-width: 17vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .about__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
@@ -580,6 +611,10 @@ html {
       .tours__img {
         max-height: 31vh;
         max-width: 17vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .tours__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;

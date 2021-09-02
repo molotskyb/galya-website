@@ -12,8 +12,10 @@
 		@media only screen and (max-width: $bp-medium) {
 			max-height: 31vh;
 			max-width: 17vw;
-			// margin-bottom: 3rem;
-			// margin-left: 8rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			max-height: 61vh;
+			max-width: 68vw;
 		}
 	}
 
@@ -62,6 +64,10 @@
 		@media only screen and (max-width: $bp-medium) {
 			max-height: 31vh;
 			max-width: 17vw;
+		}
+		@media only screen and (max-width: $bp-small) {
+			max-height: 61vh;
+			max-width: 68vw;
 		}
 	}
 

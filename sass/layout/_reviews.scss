@@ -8,6 +8,11 @@
 	&__img {
 		max-height: 61vh;
 		max-width: 25vw;
+
+		@media only screen and (max-width: $bp-small) {
+			max-height: 61vh;
+			max-width: 68vw;
+		}
 	}
 
 	&__heading {
