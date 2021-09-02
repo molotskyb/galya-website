@@ -34,6 +34,9 @@ html {
 .nav__link {
   color: white;
   font-size: 1.8rem; }
+  @media only screen and (max-width: 50em) {
+    .nav__link {
+      font-size: 3rem; } }
 
 .about__heading {
   font-size: 3.6rem;
@@ -43,7 +46,7 @@ html {
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .about__txt {
-      font-size: 2.4rem; } }
+      font-size: 3rem; } }
 
 .quot {
   font-size: 3.6rem;
@@ -51,7 +54,7 @@ html {
   color: #f87400; }
   @media only screen and (max-width: 50em) {
     .quot {
-      font-size: 4.2rem; } }
+      font-size: 4.8rem; } }
 
 .tours__heading {
   font-size: 3.6rem;
@@ -61,7 +64,7 @@ html {
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .tours__txt {
-      font-size: 2.4rem; } }
+      font-size: 3rem; } }
 
 .reviews__heading {
   font-size: 3.6rem;
@@ -72,7 +75,7 @@ html {
   font-family: "Caveat", cursive; }
   @media only screen and (max-width: 50em) {
     .reviews__txt {
-      font-size: 3.6rem; } }
+      font-size: 4.2rem; } }
 
 .contacts__heading {
   font-size: 3.6rem;
@@ -89,7 +92,7 @@ html {
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .footer {
-      font-size: 2.4rem; } }
+      font-size: 3rem; } }
 
 .container {
   display: grid;

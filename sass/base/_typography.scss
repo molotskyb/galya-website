@@ -21,6 +21,10 @@ html {
 .nav__link {
 	color: white;
 	font-size: $medium-font-size;
+
+	@media only screen and (max-width: $bp-medium) {
+		font-size: $medium-font-size-3;
+	}
 }
 
 .about {
@@ -33,7 +37,7 @@ html {
 		font-size: $medium-font-size;
 
 		@media only screen and (max-width: $bp-medium) {
-			font-size: $medium-font-size-2;
+			font-size: $medium-font-size-3;
 		}
 	}
 }
@@ -44,7 +48,7 @@ html {
 	color: $color-hand-writing;
 
 	@media only screen and (max-width: $bp-medium) {
-		font-size: $big-font-size-2;
+		font-size: $big-font-size-3;
 	}
 }
 
@@ -57,7 +61,7 @@ html {
 		font-size: $medium-font-size;
 
 		@media only screen and (max-width: $bp-medium) {
-			font-size: $medium-font-size-2;
+			font-size: $medium-font-size-3;
 		}
 	}
 }
@@ -73,7 +77,7 @@ html {
 		font-family: $quot-font-family;
 
 		@media only screen and (max-width: $bp-medium) {
-			font-size: $big-font-size;
+			font-size: $big-font-size-2;
 		}
 	}
 }
@@ -97,6 +101,6 @@ html {
 	font-size: $medium-font-size;
 
 	@media only screen and (max-width: $bp-medium) {
-		font-size: $medium-font-size-2;
+		font-size: $medium-font-size-3;
 	}
 }
