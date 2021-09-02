@@ -1,6 +1,10 @@
 .reviews {
 	margin-top: 12rem;
 
+	@media only screen and (max-width: $bp-medium) {
+		margin-top: 6rem;
+	}
+
 	&__img {
 		max-height: 61vh;
 		max-width: 25vw;
@@ -10,6 +14,10 @@
 		background-color: $color-heading-txt;
 		padding: 1rem 4rem;
 		margin-bottom: 12rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin-bottom: 6rem;
+		}
 	}
 
 	&__txt {

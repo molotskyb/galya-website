@@ -8,7 +8,7 @@
 
 	&__flag {
 		max-height: 8vh;
-		max-width: 10vw;
+		max-width: 8vw;
 		padding-top: 1.2rem;
 	}
 }
@@ -24,6 +24,6 @@
 	&__link:active {
 		padding: 1rem;
 		background-color: rgba($color-heading-txt, 0.9);
-		transform: translateY(-3px);
+		transform: translateY(-1px);
 	}
 }

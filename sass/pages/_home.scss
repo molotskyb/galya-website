@@ -1,20 +1,39 @@
 .about {
 	margin-top: 12rem;
 
+	@media only screen and (max-width: $bp-medium) {
+		margin-top: 6rem;
+	}
+
 	&__img {
 		max-height: 61vh;
 		max-width: 25vw;
+
+		@media only screen and (max-width: $bp-medium) {
+			max-height: 31vh;
+			max-width: 17vw;
+			// margin-bottom: 3rem;
+			// margin-left: 8rem;
+		}
 	}
 
 	&__heading {
 		background-color: $color-heading-txt;
 		padding: 1rem 4rem;
 		margin-bottom: 12rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin-bottom: 6rem;
+		}
 	}
 
 	&__txt {
 		background-color: $color-text;
 		padding: 6rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			padding: 3rem;
+		}
 	}
 }
 
@@ -26,18 +45,36 @@
 .tours {
 	margin-top: 6rem;
 	margin-bottom: 12rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		margin-top: -1rem;
+	}
+
 	&__img {
 		max-height: 61vh;
 		max-width: 25vw;
+
+		@media only screen and (max-width: $bp-medium) {
+			max-height: 31vh;
+			max-width: 17vw;
+		}
 	}
 
 	&__heading {
 		background-color: $color-heading-txt;
 		padding: 1rem 4rem;
 		margin-bottom: 12rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin-bottom: 6rem;
+		}
 	}
 	&__txt {
 		background-color: $color-text;
 		padding: 6rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			padding: 3rem;
+		}
 	}
 }
