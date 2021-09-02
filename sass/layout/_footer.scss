@@ -1,0 +1,22 @@
+.footer {
+	background-color: $color-header;
+	padding: 4rem;
+}
+
+.bocoya {
+	color: white;
+	text-decoration: none;
+}
+
+.bocoya:link,
+.bocoya:visited {
+	// display: block;
+	transition: all 0.2s;
+}
+
+.bocoya:hover,
+.bocoya:active {
+	padding: 1rem;
+	background-color: rgba($color-heading-txt, 0.9);
+	transform: translateY(-3px);
+}

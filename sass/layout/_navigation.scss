@@ -1,0 +1,29 @@
+.nav {
+	&__links {
+		list-style: none;
+	}
+	&__link {
+		text-decoration: none;
+	}
+
+	&__flag {
+		max-height: 8vh;
+		max-width: 10vw;
+		padding-top: 1.2rem;
+	}
+}
+
+.nav {
+	&__link:link,
+	&__link:visited {
+		display: block;
+		transition: all 0.2s;
+	}
+
+	&__link:hover,
+	&__link:active {
+		padding: 1rem;
+		background-color: rgba($color-heading-txt, 0.9);
+		transform: translateY(-3px);
+	}
+}

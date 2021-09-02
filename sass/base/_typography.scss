@@ -1,0 +1,78 @@
+html {
+	font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+	@media only screen and (max-width: $bp-largest) {
+		font-size: 50%;
+	}
+	@media only screen and (max-width: $bp-large) {
+		font-size: 40%;
+	}
+	@media only screen and (max-width: $bp-medium) {
+		font-size: 30%;
+	}
+	@media only screen and (max-width: $bp-small) {
+		font-size: 20%;
+	}
+	@media only screen and (max-width: $bp-smallest) {
+		font-size: 15%;
+	}
+}
+
+.nav__link {
+	color: white;
+	font-size: $medium-font-size;
+}
+
+.about {
+	&__heading {
+		font-size: $big-font-size;
+		color: white;
+	}
+
+	&__txt {
+		font-size: $medium-font-size;
+	}
+}
+
+.quot {
+	font-size: $big-font-size;
+	font-family: $quot-font-family;
+	color: $color-hand-writing;
+}
+
+.tours {
+	&__heading {
+		font-size: $big-font-size;
+		color: white;
+	}
+	&__txt {
+		font-size: $medium-font-size;
+	}
+}
+
+.reviews {
+	&__heading {
+		font-size: $big-font-size;
+		color: white;
+	}
+
+	&__txt {
+		font-size: $medium-font-size-2;
+		font-family: $quot-font-family;
+	}
+}
+
+.contacts {
+	&__heading {
+		font-size: $big-font-size;
+		color: white;
+	}
+	&__txt {
+		font-size: $medium-font-size-2;
+	}
+}
+
+.footer {
+	color: white;
+	font-size: $medium-font-size;
+}

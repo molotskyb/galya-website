@@ -1,0 +1,43 @@
+.about {
+	margin-top: 12rem;
+
+	&__img {
+		max-height: 61vh;
+		max-width: 25vw;
+	}
+
+	&__heading {
+		background-color: $color-heading-txt;
+		padding: 1rem 4rem;
+		margin-bottom: 12rem;
+	}
+
+	&__txt {
+		background-color: $color-text;
+		padding: 6rem;
+	}
+}
+
+.quot {
+	margin-top: 12rem;
+	margin-bottom: 12rem;
+}
+
+.tours {
+	margin-top: 6rem;
+	margin-bottom: 12rem;
+	&__img {
+		max-height: 61vh;
+		max-width: 25vw;
+	}
+
+	&__heading {
+		background-color: $color-heading-txt;
+		padding: 1rem 4rem;
+		margin-bottom: 12rem;
+	}
+	&__txt {
+		background-color: $color-text;
+		padding: 6rem;
+	}
+}

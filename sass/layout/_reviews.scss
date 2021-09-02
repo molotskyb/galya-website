@@ -1,0 +1,35 @@
+.reviews {
+	margin-top: 12rem;
+
+	&__img {
+		max-height: 61vh;
+		max-width: 25vw;
+	}
+
+	&__heading {
+		background-color: $color-heading-txt;
+		padding: 1rem 4rem;
+		margin-bottom: 12rem;
+	}
+
+	&__txt {
+		padding: 2rem;
+		color: $color-hand-writing-2;
+		&--1 {
+			background-color: $color-text;
+			margin: 2rem;
+		}
+		&--2 {
+			background-color: $color-text;
+			margin: 2rem;
+		}
+		&--3 {
+			background-color: $color-text;
+			margin: 2rem;
+		}
+		&--4 {
+			background-color: $color-text;
+			margin: 2rem;
+		}
+	}
+}
