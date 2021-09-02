@@ -1,7 +1,7 @@
 .about {
 	margin-top: 12rem;
 
-	@media only screen and (max-width: $bp-medium) {
+	@media only screen and (max-width: $bp-small) {
 		margin-top: 6rem;
 	}
 
@@ -22,7 +22,7 @@
 		padding: 1rem 4rem;
 		margin-bottom: 12rem;
 
-		@media only screen and (max-width: $bp-medium) {
+		@media only screen and (max-width: $bp-small) {
 			margin-bottom: 6rem;
 		}
 	}
@@ -46,7 +46,7 @@
 	margin-top: 6rem;
 	margin-bottom: 12rem;
 
-	@media only screen and (max-width: $bp-medium) {
+	@media only screen and (max-width: $bp-small) {
 		margin-top: -1rem;
 	}
 
@@ -65,7 +65,7 @@
 		padding: 1rem 4rem;
 		margin-bottom: 12rem;
 
-		@media only screen and (max-width: $bp-medium) {
+		@media only screen and (max-width: $bp-small) {
 			margin-bottom: 6rem;
 		}
 	}

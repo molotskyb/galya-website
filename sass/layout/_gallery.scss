@@ -1,7 +1,7 @@
 .gallery-1 {
 	margin-top: 3rem;
 
-	@media only screen and (max-width: $bp-medium) {
+	@media only screen and (max-width: $bp-small) {
 		margin-top: 1rem;
 	}
 
@@ -15,7 +15,7 @@
 .gallery-2 {
 	margin-top: 6rem;
 
-	@media only screen and (max-width: $bp-medium) {
+	@media only screen and (max-width: $bp-small) {
 		margin-top: 1rem;
 	}
 
