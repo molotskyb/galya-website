@@ -33,7 +33,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-3;
+			font-size: $big-font-size-4;
 		}
 	}
 
@@ -44,7 +44,7 @@ html {
 			font-size: $medium-font-size-3;
 		}
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size-2;
 		}
 	}
 }
@@ -58,7 +58,7 @@ html {
 		font-size: $big-font-size-3;
 	}
 	@media only screen and (max-width: $bp-small) {
-		font-size: $huge-font-size;
+		font-size: $huge-font-size-2;
 	}
 }
 
@@ -68,7 +68,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-3;
+			font-size: $big-font-size-4;
 		}
 	}
 	&__txt {
@@ -78,7 +78,7 @@ html {
 			font-size: $medium-font-size-3;
 		}
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size;
 		}
 	}
 }
@@ -89,7 +89,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-3;
+			font-size: $big-font-size-4;
 		}
 	}
 
@@ -112,7 +112,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-3;
+			font-size: $big-font-size-4;
 		}
 	}
 	&__txt {
@@ -121,9 +121,8 @@ html {
 		@media only screen and (max-width: $bp-medium) {
 			font-size: $big-font-size;
 		}
-
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-3;
+			font-size: $huge-font-size;
 		}
 	}
 }
@@ -133,6 +132,6 @@ html {
 	font-size: $medium-font-size;
 
 	@media only screen and (max-width: $bp-medium) {
-		font-size: $medium-font-size-4;
+		font-size: $big-font-size-2;
 	}
 }

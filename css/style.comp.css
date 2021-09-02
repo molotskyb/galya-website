@@ -46,7 +46,7 @@ html {
   color: white; }
   @media only screen and (max-width: 37.5em) {
     .about__heading {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .about__txt {
   font-size: 1.8rem; }
@@ -55,7 +55,7 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .about__txt {
-      font-size: 6.4rem; } }
+      font-size: 7.6rem; } }
 
 .quot {
   font-size: 3.6rem;
@@ -66,14 +66,14 @@ html {
       font-size: 5.8rem; } }
   @media only screen and (max-width: 37.5em) {
     .quot {
-      font-size: 7.2rem; } }
+      font-size: 7.6rem; } }
 
 .tours__heading {
   font-size: 3.6rem;
   color: white; }
   @media only screen and (max-width: 37.5em) {
     .tours__heading {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .tours__txt {
   font-size: 1.8rem; }
@@ -82,14 +82,14 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .tours__txt {
-      font-size: 5.8rem; } }
+      font-size: 7.2rem; } }
 
 .reviews__heading {
   font-size: 3.6rem;
   color: white; }
   @media only screen and (max-width: 37.5em) {
     .reviews__heading {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .reviews__txt {
   font-size: 2.4rem;
@@ -99,14 +99,14 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .reviews__txt {
-      font-size: 5.8rem; } }
+      font-size: 7.2rem; } }
 
 .contacts__heading {
   font-size: 3.6rem;
   color: white; }
   @media only screen and (max-width: 37.5em) {
     .contacts__heading {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .contacts__txt {
   font-size: 2.4rem; }
@@ -115,14 +115,14 @@ html {
       font-size: 3.6rem; } }
   @media only screen and (max-width: 37.5em) {
     .contacts__txt {
-      font-size: 5.8rem; } }
+      font-size: 7.2rem; } }
 
 .footer {
   color: white;
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .footer {
-      font-size: 3.4rem; } }
+      font-size: 4.2rem; } }
 
 .container {
   display: grid;
