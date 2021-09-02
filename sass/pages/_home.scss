@@ -40,6 +40,11 @@
 .quot {
 	margin-top: 12rem;
 	margin-bottom: 12rem;
+
+	@media only screen and (max-width: $bp-small) {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
 }
 
 .tours {

@@ -526,6 +526,10 @@ html {
 .quot {
   margin-top: 12rem;
   margin-bottom: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .quot {
+      margin-top: 6rem;
+      margin-bottom: 6rem; } }
 
 .tours {
   margin-top: 6rem;
