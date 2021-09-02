@@ -55,7 +55,7 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .about__txt {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .quot {
   font-size: 3.6rem;
@@ -82,7 +82,7 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .tours__txt {
-      font-size: 5.8rem; } }
+      font-size: 6.4rem; } }
 
 .reviews__heading {
   font-size: 3.6rem;
@@ -99,7 +99,7 @@ html {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .reviews__txt {
-      font-size: 5.8rem; } }
+      font-size: 7.2rem; } }
 
 .contacts__heading {
   font-size: 3.6rem;
@@ -317,40 +317,44 @@ html {
     justify-content: center; }
     .reviews__txt--1 {
       grid-column: 5 / span 5;
-      grid-row: 3 / span 1; }
+      grid-row: 2 / span 1; }
       @media only screen and (max-width: 50em) {
         .reviews__txt--1 {
           grid-column: 4 / span 8; } }
       @media only screen and (max-width: 37.5em) {
         .reviews__txt--1 {
-          grid-column: 1 / -1; } }
+          grid-column: 1 / -1;
+          grid-row: 3 / span 1; } }
     .reviews__txt--2 {
+      grid-column: 5 / span 5;
+      grid-row: 3 / span 1; }
+      @media only screen and (max-width: 50em) {
+        .reviews__txt--2 {
+          grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--2 {
+          grid-column: 1 / -1;
+          grid-row: 4 / span 1; } }
+    .reviews__txt--3 {
       grid-column: 5 / span 5;
       grid-row: 4 / span 1; }
       @media only screen and (max-width: 50em) {
-        .reviews__txt--2 {
+        .reviews__txt--3 {
           grid-column: 4 / span 8; } }
       @media only screen and (max-width: 37.5em) {
-        .reviews__txt--2 {
-          grid-column: 1 / -1; } }
-    .reviews__txt--3 {
+        .reviews__txt--3 {
+          grid-column: 1 / -1;
+          grid-row: 5 / span 1; } }
+    .reviews__txt--4 {
       grid-column: 5 / span 5;
       grid-row: 5 / span 1; }
       @media only screen and (max-width: 50em) {
-        .reviews__txt--3 {
-          grid-column: 4 / span 8; } }
-      @media only screen and (max-width: 37.5em) {
-        .reviews__txt--3 {
-          grid-column: 1 / -1; } }
-    .reviews__txt--4 {
-      grid-column: 5 / span 5;
-      grid-row: 6 / span 1; }
-      @media only screen and (max-width: 50em) {
         .reviews__txt--4 {
           grid-column: 4 / span 8; } }
       @media only screen and (max-width: 37.5em) {
         .reviews__txt--4 {
-          grid-column: 1 / -1; } }
+          grid-column: 1 / -1;
+          grid-row: 6 / span 1; } }
 
 .contacts {
   grid-column: full-start / full-end;

@@ -12,6 +12,9 @@ body {
   font-weight: 300;
   line-height: 1.6;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 1rem; } }
 
 html {
   font-size: 62.5%; }
@@ -34,44 +37,92 @@ html {
 .nav__link {
   color: white;
   font-size: 1.8rem; }
+  @media only screen and (max-width: 50em) {
+    .nav__link {
+      font-size: 3.4rem; } }
 
 .about__heading {
   font-size: 3.6rem;
   color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .about__heading {
+      font-size: 5.8rem; } }
 
 .about__txt {
   font-size: 1.8rem; }
+  @media only screen and (max-width: 50em) {
+    .about__txt {
+      font-size: 3.4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about__txt {
+      font-size: 6.4rem; } }
 
 .quot {
   font-size: 3.6rem;
   font-family: "Caveat", cursive;
   color: #f87400; }
+  @media only screen and (max-width: 50em) {
+    .quot {
+      font-size: 5.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .quot {
+      font-size: 7.2rem; } }
 
 .tours__heading {
   font-size: 3.6rem;
   color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .tours__heading {
+      font-size: 5.8rem; } }
 
 .tours__txt {
   font-size: 1.8rem; }
+  @media only screen and (max-width: 50em) {
+    .tours__txt {
+      font-size: 3.4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .tours__txt {
+      font-size: 5.8rem; } }
 
 .reviews__heading {
   font-size: 3.6rem;
   color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .reviews__heading {
+      font-size: 5.8rem; } }
 
 .reviews__txt {
   font-size: 2.4rem;
   font-family: "Caveat", cursive; }
+  @media only screen and (max-width: 50em) {
+    .reviews__txt {
+      font-size: 3.4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .reviews__txt {
+      font-size: 5.8rem; } }
 
 .contacts__heading {
   font-size: 3.6rem;
   color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .contacts__heading {
+      font-size: 5.8rem; } }
 
 .contacts__txt {
   font-size: 2.4rem; }
+  @media only screen and (max-width: 50em) {
+    .contacts__txt {
+      font-size: 3.6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contacts__txt {
+      font-size: 5.8rem; } }
 
 .footer {
   color: white;
   font-size: 1.8rem; }
+  @media only screen and (max-width: 50em) {
+    .footer {
+      font-size: 3.4rem; } }
 
 .container {
   display: grid;
@@ -94,6 +145,9 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 18vw);
   grid-column-gap: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .gallery-1 {
+      grid-column-gap: 1rem; } }
   .gallery-1__item--1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2; }
@@ -111,18 +165,38 @@ html {
   .about__pic {
     grid-column: 2 / span 2;
     grid-row: 2 / 3; }
+    @media only screen and (max-width: 50em) {
+      .about__pic {
+        grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__pic {
+        grid-column: 2 / span 8;
+        grid-row: 2 / 2; } }
   .about__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
     justify-self: center; }
+    @media only screen and (max-width: 50em) {
+      .about__heading {
+        grid-column: 2 / span 8; } }
   .about__txt {
     grid-column: 5 / 10;
     grid-row: 2 / span 2;
     align-self: center; }
+    @media only screen and (max-width: 50em) {
+      .about__txt {
+        grid-column: 3 / span 8; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__txt {
+        grid-column: 1/ -1;
+        grid-row: 3 / 3; } }
 
 .quot {
   grid-column: 4 / -4;
   justify-self: center; }
+  @media only screen and (max-width: 37.5em) {
+    .quot {
+      grid-column: 1 / -1; } }
 
 .slider {
   grid-column: full-start / full-end;
@@ -137,14 +211,31 @@ html {
   .tours__pic {
     grid-column: 2 / span 2;
     grid-row: 2 / 3; }
+    @media only screen and (max-width: 50em) {
+      .tours__pic {
+        grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__pic {
+        grid-column: 2 / span 4;
+        grid-row: 2 / 3; } }
   .tours__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
     justify-self: center; }
+    @media only screen and (max-width: 50em) {
+      .tours__heading {
+        grid-column: 2 / span 8; } }
   .tours__txt {
     grid-column: 5 / 10;
     grid-row: 2 / span 2;
     align-self: center; }
+    @media only screen and (max-width: 50em) {
+      .tours__txt {
+        grid-column: 3 / span 8; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__txt {
+        grid-column: 1/ -1;
+        grid-row: 3 / 3; } }
 
 .gallery-2 {
   grid-column: full-start / full-end;
@@ -153,6 +244,9 @@ html {
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 1.5rem;
   padding: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery-2 {
+      grid-gap: 0.5rem; } }
   .gallery-2__item--1 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2; }
@@ -204,25 +298,63 @@ html {
   .reviews__pic {
     grid-column: 2 / span 3;
     grid-row: 2 / span 2; }
+    @media only screen and (max-width: 50em) {
+      .reviews__pic {
+        grid-column: 1 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__pic {
+        grid-column: 2 / span 4;
+        grid-row: 2 / 2; } }
   .reviews__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
     justify-self: center; }
+    @media only screen and (max-width: 50em) {
+      .reviews__heading {
+        grid-column: 2 / span 8; } }
   .reviews__txt {
     align-content: center;
     justify-content: center; }
     .reviews__txt--1 {
       grid-column: 5 / span 5;
       grid-row: 2 / span 1; }
+      @media only screen and (max-width: 50em) {
+        .reviews__txt--1 {
+          grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--1 {
+          grid-column: 1 / -1;
+          grid-row: 3 / span 1; } }
     .reviews__txt--2 {
       grid-column: 5 / span 5;
       grid-row: 3 / span 1; }
+      @media only screen and (max-width: 50em) {
+        .reviews__txt--2 {
+          grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--2 {
+          grid-column: 1 / -1;
+          grid-row: 4 / span 1; } }
     .reviews__txt--3 {
       grid-column: 5 / span 5;
       grid-row: 4 / span 1; }
+      @media only screen and (max-width: 50em) {
+        .reviews__txt--3 {
+          grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--3 {
+          grid-column: 1 / -1;
+          grid-row: 5 / span 1; } }
     .reviews__txt--4 {
       grid-column: 5 / span 5;
       grid-row: 5 / span 1; }
+      @media only screen and (max-width: 50em) {
+        .reviews__txt--4 {
+          grid-column: 4 / span 8; } }
+      @media only screen and (max-width: 37.5em) {
+        .reviews__txt--4 {
+          grid-column: 1 / -1;
+          grid-row: 6 / span 1; } }
 
 .contacts {
   grid-column: full-start / full-end;
@@ -231,15 +363,31 @@ html {
   .contacts__pic {
     grid-column: 4 / span 2;
     grid-row: 2 / 2; }
+    @media only screen and (max-width: 50em) {
+      .contacts__pic {
+        grid-column: 3 / span 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__pic {
+        grid-column: 2 / span 2;
+        justify-self: center; } }
   .contacts__heading {
     grid-column: 4 / 8;
     grid-row: 1 / span 1;
     justify-self: center; }
+    @media only screen and (max-width: 50em) {
+      .contacts__heading {
+        grid-column: 2 / span 8; } }
   .contacts__txt {
     grid-column: 6 / span 4;
     grid-row: 2 / span 2;
     align-self: center;
     justify-self: start; }
+    @media only screen and (max-width: 50em) {
+      .contacts__txt {
+        grid-column: 6 / span 4; } }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__txt {
+        grid-column: 4 / -1; } }
 
 .footer {
   grid-column: full-start / full-end;
@@ -286,7 +434,7 @@ html {
 
 .nav__flag {
   max-height: 8vh;
-  max-width: 10vw;
+  max-width: 8vw;
   padding-top: 1.2rem; }
 
 .nav__link:link, .nav__link:visited {
@@ -296,10 +444,13 @@ html {
 .nav__link:hover, .nav__link:active {
   padding: 1rem;
   background-color: rgba(220, 102, 102, 0.9);
-  transform: translateY(-3px); }
+  transform: translateY(-1px); }
 
 .gallery-1 {
   margin-top: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery-1 {
+      margin-top: 1rem; } }
   .gallery-1__img {
     object-fit: cover;
     height: 100%;
@@ -308,6 +459,9 @@ html {
 
 .gallery-2 {
   margin-top: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery-2 {
+      margin-top: 1rem; } }
   .gallery-2__img {
     object-fit: cover;
     width: 100%;
@@ -316,13 +470,23 @@ html {
 
 .reviews {
   margin-top: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .reviews {
+      margin-top: 6rem; } }
   .reviews__img {
     max-height: 61vh;
     max-width: 25vw; }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .reviews__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__heading {
+        margin-bottom: 6rem; } }
   .reviews__txt {
     padding: 2rem;
     color: #2252c2; }
@@ -342,17 +506,33 @@ html {
 .contacts {
   margin-top: 12rem;
   margin-bottom: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .contacts {
+      margin-top: 6rem;
+      margin-bottom: 1rem; } }
   .contacts__img {
     width: 28rem;
     height: 36rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__img {
+        width: 14rem;
+        height: 18rem;
+        margin-top: 3.5rem; } }
   .contacts__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__heading {
+        margin-bottom: 3rem; } }
   .contacts__txt {
     background-color: #f4a460;
     padding: 4rem;
     margin: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__txt {
+        padding: 2rem;
+        margin-right: -4rem; } }
   .contacts__link {
     color: black;
     list-style: none; }
@@ -372,6 +552,11 @@ html {
       margin-left: 1rem;
       margin-bottom: -0.5rem;
       transition: all 0.2s; }
+      @media only screen and (max-width: 37.5em) {
+        .nav-contacts__link:link svg, .nav-contacts__link:visited svg {
+          height: 2.2rem;
+          width: 2.2rem;
+          margin-left: -2rem; } }
   .nav-contacts__link:hover, .nav-contacts__link:active {
     background-color: rgba(158, 157, 157, 0.05);
     color: white;
@@ -381,31 +566,69 @@ html {
 
 .about {
   margin-top: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      margin-top: 6rem; } }
   .about__img {
     max-height: 61vh;
     max-width: 25vw; }
+    @media only screen and (max-width: 50em) {
+      .about__img {
+        max-height: 31vh;
+        max-width: 17vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .about__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__heading {
+        margin-bottom: 6rem; } }
   .about__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
+    @media only screen and (max-width: 50em) {
+      .about__txt {
+        padding: 3rem; } }
 
 .quot {
   margin-top: 12rem;
   margin-bottom: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .quot {
+      margin-top: 6rem;
+      margin-bottom: 6rem; } }
 
 .tours {
   margin-top: 6rem;
   margin-bottom: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .tours {
+      margin-top: -1rem; } }
   .tours__img {
     max-height: 61vh;
     max-width: 25vw; }
+    @media only screen and (max-width: 50em) {
+      .tours__img {
+        max-height: 31vh;
+        max-width: 17vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .tours__img {
+        max-height: 61vh;
+        max-width: 68vw; } }
   .tours__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
+    @media only screen and (max-width: 37.5em) {
+      .tours__heading {
+        margin-bottom: 6rem; } }
   .tours__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
+    @media only screen and (max-width: 50em) {
+      .tours__txt {
+        padding: 3rem; } }
