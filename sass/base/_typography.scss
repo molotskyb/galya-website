@@ -33,7 +33,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size-2;
 		}
 	}
 
@@ -58,7 +58,7 @@ html {
 		font-size: $big-font-size-3;
 	}
 	@media only screen and (max-width: $bp-small) {
-		font-size: $huge-font-size-2;
+		font-size: $huge-font-size-3;
 	}
 }
 
@@ -68,7 +68,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size-2;
 		}
 	}
 	&__txt {
@@ -89,7 +89,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size-2;
 		}
 	}
 
@@ -101,7 +101,7 @@ html {
 			font-size: $medium-font-size-3;
 		}
 		@media only screen and (max-width: $bp-small) {
-			font-size: $huge-font-size;
+			font-size: $huge-font-size-3;
 		}
 	}
 }
@@ -112,7 +112,7 @@ html {
 		color: white;
 
 		@media only screen and (max-width: $bp-small) {
-			font-size: $big-font-size-4;
+			font-size: $huge-font-size-2;
 		}
 	}
 	&__txt {
