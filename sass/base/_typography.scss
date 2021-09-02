@@ -31,6 +31,10 @@ html {
 	&__heading {
 		font-size: $big-font-size;
 		color: white;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
 	}
 
 	&__txt {
@@ -38,6 +42,9 @@ html {
 
 		@media only screen and (max-width: $bp-medium) {
 			font-size: $medium-font-size-3;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
 		}
 	}
 }
@@ -50,18 +57,28 @@ html {
 	@media only screen and (max-width: $bp-medium) {
 		font-size: $big-font-size-3;
 	}
+	@media only screen and (max-width: $bp-small) {
+		font-size: $huge-font-size;
+	}
 }
 
 .tours {
 	&__heading {
 		font-size: $big-font-size;
 		color: white;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
 	}
 	&__txt {
 		font-size: $medium-font-size;
 
 		@media only screen and (max-width: $bp-medium) {
 			font-size: $medium-font-size-3;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
 		}
 	}
 }
@@ -70,6 +87,10 @@ html {
 	&__heading {
 		font-size: $big-font-size;
 		color: white;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
 	}
 
 	&__txt {
@@ -77,7 +98,10 @@ html {
 		font-family: $quot-font-family;
 
 		@media only screen and (max-width: $bp-medium) {
-			font-size: $big-font-size-2;
+			font-size: $medium-font-size-3;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
 		}
 	}
 }
@@ -86,6 +110,10 @@ html {
 	&__heading {
 		font-size: $big-font-size;
 		color: white;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
 	}
 	&__txt {
 		font-size: $medium-font-size-2;

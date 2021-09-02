@@ -87,6 +87,10 @@
 .quot {
 	grid-column: 4 / -4;
 	justify-self: center;
+
+	@media only screen and (max-width: $bp-small) {
+		grid-column: 1 / -1;
+	}
 }
 
 .slider {
@@ -244,6 +248,10 @@
 			grid-row: 3 / span 1;
 
 			@media only screen and (max-width: $bp-medium) {
+				grid-column: 4 / span 8;
+			}
+
+			@media only screen and (max-width: $bp-small) {
 				grid-column: 1 / -1;
 			}
 		}
@@ -252,6 +260,10 @@
 			grid-row: 4 / span 1;
 
 			@media only screen and (max-width: $bp-medium) {
+				grid-column: 4 / span 8;
+			}
+
+			@media only screen and (max-width: $bp-small) {
 				grid-column: 1 / -1;
 			}
 		}
@@ -260,6 +272,10 @@
 			grid-row: 5 / span 1;
 
 			@media only screen and (max-width: $bp-medium) {
+				grid-column: 4 / span 8;
+			}
+
+			@media only screen and (max-width: $bp-small) {
 				grid-column: 1 / -1;
 			}
 		}
