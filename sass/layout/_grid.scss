@@ -12,6 +12,29 @@
 
 .header {
 	grid-column: full-start / full-end;
+	position: sticky;
+	top: 3vh;
+
+	//white backgroung wrapping the original header:
+	&--2 {
+		grid-column: full-start / full-end;
+		position: sticky;
+		top: 0;
+		height: 16vh;
+
+		@media only screen and (max-width: $bp-largest) {
+			height: 14vh;
+		}
+		@media only screen and (max-width: $bp-large) {
+			height: 12vh;
+		}
+		@media only screen and (max-width: $bp-medium) {
+			height: 10vh;
+		}
+		@media only screen and (max-width: $bp-small) {
+			height: 8vh;
+		}
+	}
 }
 
 .nav__links {

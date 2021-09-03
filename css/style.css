@@ -133,7 +133,26 @@ html {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  position: sticky;
+  top: 3vh; }
+  .header--2 {
+    grid-column: full-start / full-end;
+    position: sticky;
+    top: 0;
+    height: 16vh; }
+    @media only screen and (max-width: 75em) {
+      .header--2 {
+        height: 14vh; } }
+    @media only screen and (max-width: 62.5em) {
+      .header--2 {
+        height: 12vh; } }
+    @media only screen and (max-width: 50em) {
+      .header--2 {
+        height: 10vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .header--2 {
+        height: 8vh; } }
 
 .nav__links {
   display: grid;
@@ -419,6 +438,9 @@ html {
 
 .header {
   background-color: #5c8eff; }
+  .header--2 {
+    background-color: white;
+    margin-top: -18vh; }
 
 .footer {
   background-color: #5c8eff;

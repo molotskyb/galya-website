@@ -1,3 +1,9 @@
 .header {
 	background-color: $color-header;
+
+	//white backgroung wrapping the original header:
+	&--2 {
+		background-color: white;
+		margin-top: -18vh;
+	}
 }

@@ -11,9 +11,7 @@
 		max-width: 8vw;
 		padding-top: 1.2rem;
 	}
-}
 
-.nav {
 	&__link:link,
 	&__link:visited {
 		display: block;
@@ -26,4 +24,11 @@
 		background-color: rgba($color-heading-txt, 0.9);
 		transform: translateY(-1px);
 	}
+
+	// &.sticky {
+	// 	display: flex;
+	// 	position: fixed;
+	// 	margin-top: -3rem;
+	// 	height: 10rem;
+	// }
 }
