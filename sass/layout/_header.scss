@@ -5,5 +5,12 @@
 	&--2 {
 		background-color: white;
 		margin-top: -18vh;
+
+		@media only screen and (max-width: $bp-medium) {
+			height: 12vh;
+		}
+		@media only screen and (max-width: $bp-smallest) {
+			height: 18vh;
+		}
 	}
 }

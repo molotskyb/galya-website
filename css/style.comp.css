@@ -133,17 +133,26 @@ html {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
-  position: fixed;
-  width: 94.8vw;
-  z-index: 100; }
-  @media only screen and (max-width: 162.5em) {
-    .header {
-      width: 97vw; } }
+  grid-column: full-start / full-end;
+  position: sticky;
+  top: 3vh; }
   .header--2 {
-    position: fixed;
-    width: 100vw;
-    height: 18vh;
-    z-index: 100; }
+    grid-column: full-start / full-end;
+    position: sticky;
+    top: 0;
+    height: 16vh; }
+    @media only screen and (max-width: 75em) {
+      .header--2 {
+        height: 14vh; } }
+    @media only screen and (max-width: 62.5em) {
+      .header--2 {
+        height: 12vh; } }
+    @media only screen and (max-width: 50em) {
+      .header--2 {
+        height: 10vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .header--2 {
+        height: 8vh; } }
 
 .nav__links {
   display: grid;
@@ -151,6 +160,24 @@ html {
   grid-gap: 2rem;
   justify-items: center;
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .nav__links {
+      display: none; } }
+
+.navigation-mobile {
+  display: none; }
+  @media only screen and (max-width: 50em) {
+    .navigation-mobile {
+      grid-column: full-start / full-end;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 1 / span 1;
+      justify-items: flex-start;
+      align-items: center; } }
+  .navigation-mobile__flag {
+    grid-column: 3 / span 1;
+    justify-self: end;
+    margin-right: 3rem; }
 
 .gallery-1 {
   grid-column: full-start / full-end;
@@ -431,7 +458,7 @@ html {
   background-color: #5c8eff; }
   .header--2 {
     background-color: white;
-    margin: -4rem; }
+    margin-top: -18vh; }
 
 .footer {
   background-color: #5c8eff;
@@ -464,6 +491,14 @@ html {
   max-height: 8vh;
   max-width: 8vw;
   padding-top: 1.2rem; }
+  @media only screen and (max-width: 50em) {
+    .nav__flag {
+      max-height: 14vh;
+      max-width: 14vw; } }
+  @media only screen and (max-width: 25em) {
+    .nav__flag {
+      max-height: 18vh;
+      max-width: 18vw; } }
 
 .nav__link:link, .nav__link:visited {
   display: block;
@@ -474,11 +509,56 @@ html {
   background-color: rgba(220, 102, 102, 0.9);
   transform: translateY(-1px); }
 
+.navigation__button {
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 3rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 9rem;
+    height: 2px;
+    background-color: white;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation__icon::before {
+    top: -1.6rem; }
+  .navigation__icon::after {
+    top: 1.6rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -3rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 3rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .gallery-1 {
-  margin-top: 10rem; }
+  margin-top: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .gallery-1 {
-      margin-top: 1rem; } }
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 25em) {
+    .gallery-1 {
+      margin-top: 6rem; } }
   .gallery-1__img {
     object-fit: cover;
     height: 100%;
@@ -517,7 +597,8 @@ html {
         margin-bottom: 6rem; } }
   .reviews__txt {
     padding: 2rem;
-    color: #2252c2; }
+    color: #2252c2;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .reviews__txt--1 {
       background-color: #f3f2f2;
       margin: 2rem; }
@@ -530,6 +611,11 @@ html {
     .reviews__txt--4 {
       background-color: #f3f2f2;
       margin: 2rem; }
+  .reviews__txt:hover, .reviews__txt:active {
+    display: block;
+    color: #f87400;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-0.3rem) scale(1.16); }
 
 .contacts {
   margin-top: 12rem;

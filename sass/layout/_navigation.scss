@@ -10,6 +10,15 @@
 		max-height: 8vh;
 		max-width: 8vw;
 		padding-top: 1.2rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			max-height: 14vh;
+			max-width: 14vw;
+		}
+		@media only screen and (max-width: $bp-smallest) {
+			max-height: 18vh;
+			max-width: 18vw;
+		}
 	}
 
 	&__link:link,
@@ -30,31 +39,11 @@
 
 .navigation {
 	&__button {
-		// background-color: red;
 		height: 10rem;
 		width: 10rem;
-
-		// top: 6rem;
-		// margin-left: 6rem;
 		text-align: center;
 		cursor: pointer;
-		// position: fixed;
-		// right: 6rem;
-		// border-radius: 50%;
-		// z-index: 2000;
-		// box-shadow: 0 1rem 3rem rgba(black, 0.1);
 	}
-	// &__background {
-	// 	height: 6rem;
-	// 	width: 6rem;
-	// 	// border-radius: 50%;
-	// 	position: fixed;
-	// 	top: 6rem;
-	// 	// right: 6.5rem;
-	// 	background-image: radial-gradient(white, black);
-	// 	z-index: 1000;
-	// 	transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-	// }
 
 	&__icon {
 		position: relative;

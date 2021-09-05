@@ -57,11 +57,13 @@
 			grid-column: full-start / full-end;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			grid-column: 1 / span 1;
 			justify-items: flex-start;
 			align-items: center;
 		}
 
 		&__flag {
+			grid-column: 3 / span 1;
 			justify-self: end;
 			margin-right: 3rem;
 		}

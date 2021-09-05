@@ -171,9 +171,11 @@ html {
       grid-column: full-start / full-end;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-column: 1 / span 1;
       justify-items: flex-start;
       align-items: center; } }
   .navigation-mobile__flag {
+    grid-column: 3 / span 1;
     justify-self: end;
     margin-right: 3rem; }
 
@@ -457,6 +459,12 @@ html {
   .header--2 {
     background-color: white;
     margin-top: -18vh; }
+    @media only screen and (max-width: 50em) {
+      .header--2 {
+        height: 12vh; } }
+    @media only screen and (max-width: 25em) {
+      .header--2 {
+        height: 18vh; } }
 
 .footer {
   background-color: #5c8eff;
@@ -489,6 +497,14 @@ html {
   max-height: 8vh;
   max-width: 8vw;
   padding-top: 1.2rem; }
+  @media only screen and (max-width: 50em) {
+    .nav__flag {
+      max-height: 14vh;
+      max-width: 14vw; } }
+  @media only screen and (max-width: 25em) {
+    .nav__flag {
+      max-height: 18vh;
+      max-width: 18vw; } }
 
 .nav__link:link, .nav__link:visited {
   display: block;
@@ -545,7 +561,7 @@ html {
   margin-top: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .gallery-1 {
-      margin-top: 1rem; } }
+      margin-top: 3rem; } }
   .gallery-1__img {
     object-fit: cover;
     height: 100%;
