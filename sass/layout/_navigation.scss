@@ -57,6 +57,10 @@
 			height: 2px;
 			background-color: white;
 			display: inline-block;
+
+			@media only screen and (max-width: $bp-smallest) {
+				width: 6rem;
+			}
 		}
 
 		&::before,
@@ -77,10 +81,16 @@
 
 	&__button:hover &__icon::before {
 		top: -3rem;
+		@media only screen and (max-width: $bp-smallest) {
+			top: -2rem;
+		}
 	}
 
 	&__button:hover &__icon::after {
 		top: 3rem;
+		@media only screen and (max-width: $bp-smallest) {
+			top: 2rem;
+		}
 	}
 
 	&__checkbox:checked + &__button &__icon {

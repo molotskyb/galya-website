@@ -530,6 +530,9 @@ html {
     height: 2px;
     background-color: white;
     display: inline-block; }
+    @media only screen and (max-width: 25em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 6rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -542,9 +545,15 @@ html {
 
 .navigation__button:hover .navigation__icon::before {
   top: -3rem; }
+  @media only screen and (max-width: 25em) {
+    .navigation__button:hover .navigation__icon::before {
+      top: -2rem; } }
 
 .navigation__button:hover .navigation__icon::after {
   top: 3rem; }
+  @media only screen and (max-width: 25em) {
+    .navigation__button:hover .navigation__icon::after {
+      top: 2rem; } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
