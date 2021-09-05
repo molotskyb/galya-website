@@ -43,6 +43,29 @@
 	grid-gap: 2rem;
 	justify-items: center;
 	align-items: center;
+
+	@media only screen and (max-width: $bp-medium) {
+		display: none;
+	}
+}
+
+.navigation {
+	&-mobile {
+		display: none;
+
+		@media only screen and (max-width: $bp-medium) {
+			grid-column: full-start / full-end;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-items: flex-start;
+			align-items: center;
+		}
+
+		&__flag {
+			justify-self: end;
+			margin-right: 3rem;
+		}
+	}
 }
 
 .gallery-1 {
