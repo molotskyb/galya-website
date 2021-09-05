@@ -526,7 +526,8 @@ html {
         margin-bottom: 6rem; } }
   .reviews__txt {
     padding: 2rem;
-    color: #2252c2; }
+    color: #2252c2;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .reviews__txt--1 {
       background-color: #f3f2f2;
       margin: 2rem; }
@@ -539,6 +540,11 @@ html {
     .reviews__txt--4 {
       background-color: #f3f2f2;
       margin: 2rem; }
+  .reviews__txt:hover, .reviews__txt:active {
+    display: block;
+    color: #f87400;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-0.3rem) scale(1.16); }
 
 .contacts {
   margin-top: 12rem;

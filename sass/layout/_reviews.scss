@@ -44,5 +44,14 @@
 			background-color: $color-text;
 			margin: 2rem;
 		}
+		box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+	}
+
+	&__txt:hover,
+	&__txt:active {
+		display: block;
+		color: $color-hand-writing;
+		transition: all 0.6s ease-in-out;
+		transform: translateY(-0.3rem) scale(1.16);
 	}
 }
