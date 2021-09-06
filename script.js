@@ -3,7 +3,7 @@
 ///// Hamburger nav:
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-links");
+const navMenu = document.querySelector(".nav__links");
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -12,7 +12,7 @@ function mobileMenu() {
 	navMenu.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".nav__link");
 
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
 

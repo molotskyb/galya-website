@@ -47,6 +47,13 @@
 	@media only screen and (max-width: $bp-medium) {
 		display: none;
 	}
+
+	&.active {
+		display: block;
+		margin-left: 1rem;
+
+		// top: 20vh;
+	}
 }
 
 .navigation {

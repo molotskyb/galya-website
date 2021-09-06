@@ -4,6 +4,9 @@
 	}
 	&__link {
 		text-decoration: none;
+		@media only screen and (max-width: $bp-medium) {
+			padding: 1rem;
+		}
 	}
 
 	&__flag {
@@ -12,13 +15,13 @@
 		padding-top: 1.2rem;
 
 		@media only screen and (max-width: $bp-medium) {
-			max-height: 14vh;
-			max-width: 14vw;
+			max-height: 10vh;
+			max-width: 120vw;
 		}
-		@media only screen and (max-width: $bp-smallest) {
-			max-height: 18vh;
-			max-width: 18vw;
-		}
+		// @media only screen and (max-width: $bp-smallest) {
+		// 	max-height: 18vh;
+		// 	max-width: 18vw;
+		// }
 	}
 
 	&__link:link,
@@ -41,7 +44,7 @@
 	}
 }
 
-// Hambuger responsive navigation 1:
+// Hambuger responsive navigation:
 
 .hamburger {
 	background-color: $color-header;
@@ -75,74 +78,3 @@
 .hamburger.active .bar:nth-child(3) {
 	transform: translateY(-0.85rem) rotate(-135deg);
 }
-
-// Hambuger responsive navigation 2:
-
-// .navigation {
-// 	&__button {
-// 		height: 10rem;
-// 		width: 10rem;
-// 		text-align: center;
-// 		cursor: pointer;
-// 	}
-
-// 	&__icon {
-// 		position: relative;
-// 		margin-top: 5rem;
-// 		margin-left: 3rem;
-
-// 		&,
-// 		&::before,
-// 		&::after {
-// 			width: 9rem;
-// 			height: 2px;
-// 			background-color: white;
-// 			display: inline-block;
-
-// 			@media only screen and (max-width: $bp-smallest) {
-// 				width: 6rem;
-// 			}
-// 		}
-
-// 		&::before,
-// 		&::after {
-// 			content: "";
-// 			position: absolute;
-// 			left: 0;
-// 			transition: all 0.2s;
-// 		}
-
-// 		&::before {
-// 			top: -1.6rem;
-// 		}
-// 		&::after {
-// 			top: 1.6rem;
-// 		}
-// 	}
-
-// 	&__button:hover &__icon::before {
-// 		top: -3rem;
-// 		@media only screen and (max-width: $bp-smallest) {
-// 			top: -2rem;
-// 		}
-// 	}
-
-// 	&__button:hover &__icon::after {
-// 		top: 3rem;
-// 		@media only screen and (max-width: $bp-smallest) {
-// 			top: 2rem;
-// 		}
-// 	}
-
-// 	&-mobile.active + &__button &__icon {
-// 		background-color: transparent;
-// 	}
-// 	&-mobile.active + &__button &__icon::before {
-// 		top: 0;
-// 		transform: rotate(135deg);
-// 	}
-// 	&-mobile.active + &__button &__icon::after {
-// 		top: 0;
-// 		transform: rotate(-135deg);
-// 	}
-// }
