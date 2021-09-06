@@ -60,7 +60,7 @@ html {
 .quot {
   font-size: 3.6rem;
   font-family: "Caveat", cursive;
-  color: #f87400; }
+  color: #00165f; }
   @media only screen and (max-width: 50em) {
     .quot {
       font-size: 5.8rem; } }
@@ -177,7 +177,8 @@ html {
   .navigation-mobile__flag {
     grid-column: 3 / span 1;
     justify-self: end;
-    margin-right: 3rem; }
+    align-self: center;
+    margin-right: 1rem; }
 
 .gallery-1 {
   grid-column: full-start / full-end;
@@ -518,56 +519,25 @@ html {
   background-color: rgba(220, 102, 102, 0.9);
   transform: translateY(-1px); }
 
-.navigation__button {
-  height: 10rem;
-  width: 10rem;
-  text-align: center;
-  cursor: pointer; }
+.bar {
+  display: block;
+  width: 6rem;
+  height: 0.6rem;
+  margin: 1rem auto;
+  margin-left: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white; }
 
-.navigation__icon {
-  position: relative;
-  margin-top: 5rem;
-  margin-left: 3rem; }
-  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 9rem;
-    height: 2px;
-    background-color: white;
-    display: inline-block; }
-    @media only screen and (max-width: 25em) {
-      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-        width: 6rem; } }
-  .navigation__icon::before, .navigation__icon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: all 0.2s; }
-  .navigation__icon::before {
-    top: -1.6rem; }
-  .navigation__icon::after {
-    top: 1.6rem; }
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0; }
 
-.navigation__button:hover .navigation__icon::before {
-  top: -3rem; }
-  @media only screen and (max-width: 25em) {
-    .navigation__button:hover .navigation__icon::before {
-      top: -2rem; } }
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(1.65rem) rotate(135deg); }
 
-.navigation__button:hover .navigation__icon::after {
-  top: 3rem; }
-  @media only screen and (max-width: 25em) {
-    .navigation__button:hover .navigation__icon::after {
-      top: 2rem; } }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  top: 0;
-  transform: rotate(135deg); }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg); }
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-1.65rem) rotate(-135deg); }
 
 .gallery-1 {
   margin-top: 3rem; }
@@ -628,7 +598,7 @@ html {
       margin: 2rem; }
   .reviews__txt:hover, .reviews__txt:active {
     display: block;
-    color: #f87400;
+    color: #00165f;
     transition: all 0.6s ease-in-out;
     transform: translateY(-0.3rem) scale(1.16); }
 

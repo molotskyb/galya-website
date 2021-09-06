@@ -35,73 +35,100 @@
 	}
 }
 
-// Hambuger responsive navigation:
+// Hambuger responsive navigation 1:
+.bar {
+	display: block;
 
-.navigation {
-	&__button {
-		height: 10rem;
-		width: 10rem;
-		text-align: center;
-		cursor: pointer;
-	}
-
-	&__icon {
-		position: relative;
-		margin-top: 5rem;
-		margin-left: 3rem;
-
-		&,
-		&::before,
-		&::after {
-			width: 9rem;
-			height: 2px;
-			background-color: white;
-			display: inline-block;
-
-			@media only screen and (max-width: $bp-smallest) {
-				width: 6rem;
-			}
-		}
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			left: 0;
-			transition: all 0.2s;
-		}
-
-		&::before {
-			top: -1.6rem;
-		}
-		&::after {
-			top: 1.6rem;
-		}
-	}
-
-	&__button:hover &__icon::before {
-		top: -3rem;
-		@media only screen and (max-width: $bp-smallest) {
-			top: -2rem;
-		}
-	}
-
-	&__button:hover &__icon::after {
-		top: 3rem;
-		@media only screen and (max-width: $bp-smallest) {
-			top: 2rem;
-		}
-	}
-
-	&__checkbox:checked + &__button &__icon {
-		background-color: transparent;
-	}
-	&__checkbox:checked + &__button &__icon::before {
-		top: 0;
-		transform: rotate(135deg);
-	}
-	&__checkbox:checked + &__button &__icon::after {
-		top: 0;
-		transform: rotate(-135deg);
-	}
+	width: 6rem;
+	height: 0.6rem;
+	margin: 1rem auto;
+	margin-left: 1rem;
+	// text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
 }
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(1.65rem) rotate(135deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-1.65rem) rotate(-135deg);
+}
+
+// Hambuger responsive navigation 2:
+
+// .navigation {
+// 	&__button {
+// 		height: 10rem;
+// 		width: 10rem;
+// 		text-align: center;
+// 		cursor: pointer;
+// 	}
+
+// 	&__icon {
+// 		position: relative;
+// 		margin-top: 5rem;
+// 		margin-left: 3rem;
+
+// 		&,
+// 		&::before,
+// 		&::after {
+// 			width: 9rem;
+// 			height: 2px;
+// 			background-color: white;
+// 			display: inline-block;
+
+// 			@media only screen and (max-width: $bp-smallest) {
+// 				width: 6rem;
+// 			}
+// 		}
+
+// 		&::before,
+// 		&::after {
+// 			content: "";
+// 			position: absolute;
+// 			left: 0;
+// 			transition: all 0.2s;
+// 		}
+
+// 		&::before {
+// 			top: -1.6rem;
+// 		}
+// 		&::after {
+// 			top: 1.6rem;
+// 		}
+// 	}
+
+// 	&__button:hover &__icon::before {
+// 		top: -3rem;
+// 		@media only screen and (max-width: $bp-smallest) {
+// 			top: -2rem;
+// 		}
+// 	}
+
+// 	&__button:hover &__icon::after {
+// 		top: 3rem;
+// 		@media only screen and (max-width: $bp-smallest) {
+// 			top: 2rem;
+// 		}
+// 	}
+
+// 	&-mobile.active + &__button &__icon {
+// 		background-color: transparent;
+// 	}
+// 	&-mobile.active + &__button &__icon::before {
+// 		top: 0;
+// 		transform: rotate(135deg);
+// 	}
+// 	&-mobile.active + &__button &__icon::after {
+// 		top: 0;
+// 		transform: rotate(-135deg);
+// 	}
+// }
