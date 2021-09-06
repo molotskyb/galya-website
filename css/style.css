@@ -42,6 +42,10 @@ h1 {
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .nav__link {
+      font-size: 4.2rem;
+      font-weight: 600; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav__link {
       font-size: 6.4rem;
       font-weight: 900; } }
 
@@ -538,22 +542,33 @@ h1 {
 
 .bar {
   display: block;
-  width: 3rem;
-  height: 0.3rem;
-  margin: 0.5rem auto;
+  width: 6rem;
+  height: 0.6rem;
+  margin: 1rem auto;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .bar {
+      width: 3rem;
+      height: 0.3rem;
+      margin: 0.5rem auto; } }
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0; }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(0.85rem) rotate(135deg); }
+  transform: translateY(1.65rem) rotate(135deg); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(0.85rem) rotate(135deg); } }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-0.85rem) rotate(-135deg); }
+  transform: translateY(-1.65rem) rotate(-135deg); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-0.85rem) rotate(-135deg); } }
 
 .gallery-1 {
   margin-top: 3rem; }
