@@ -515,7 +515,7 @@ h1 {
   @media only screen and (max-width: 50em) {
     .nav__flag {
       max-height: 10vh;
-      max-width: 120vw; } }
+      max-width: 12vw; } }
 
 .nav__link:link, .nav__link:visited {
   display: block;
