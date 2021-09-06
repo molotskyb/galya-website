@@ -459,12 +459,15 @@ html {
   .header--2 {
     background-color: white;
     margin-top: -18vh; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .header--2 {
         height: 12vh; } }
+    @media only screen and (max-width: 50em) {
+      .header--2 {
+        height: 13.5vh; } }
     @media only screen and (max-width: 25em) {
       .header--2 {
-        height: 18vh; } }
+        height: 16vh; } }
 
 .footer {
   background-color: #5c8eff;
