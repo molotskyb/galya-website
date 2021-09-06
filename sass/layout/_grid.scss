@@ -57,9 +57,17 @@
 			grid-column: full-start / full-end;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-column: 1 / span 1;
+			grid-column: 2 / span 1;
 			justify-items: flex-start;
 			align-items: center;
+		}
+	}
+	&__title {
+		@media only screen and (max-width: $bp-medium) {
+			grid-column: 2 / span 2;
+			justify-self: center;
+			align-self: center;
+			margin-right: 1rem;
 		}
 
 		// &__flag {

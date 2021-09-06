@@ -35,15 +35,29 @@
 	}
 }
 
+.navigation {
+	&__title {
+		color: white;
+	}
+}
+
 // Hambuger responsive navigation 1:
+
+.hamburger {
+	background-color: $color-header;
+	padding: 1rem;
+	margin: 1rem;
+	// border-color: $color-hand-writing-2;
+	border-color: white;
+}
+
 .bar {
 	display: block;
-
 	width: 6rem;
 	height: 0.6rem;
 	margin: 1rem auto;
-	margin-left: 1rem;
-	// text-align: center;
+	// margin-left: 1rem;
+
 	cursor: pointer;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;

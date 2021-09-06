@@ -34,6 +34,9 @@ html {
     html {
       font-size: 15%; } }
 
+h1 {
+  font-size: 9rem; }
+
 .nav__link {
   color: white;
   font-size: 1.8rem; }
@@ -171,9 +174,16 @@ html {
       grid-column: full-start / full-end;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column: 1 / span 1;
+      grid-column: 2 / span 1;
       justify-items: flex-start;
       align-items: center; } }
+
+@media only screen and (max-width: 50em) {
+  .navigation__title {
+    grid-column: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+    margin-right: 1rem; } }
 
 .gallery-1 {
   grid-column: full-start / full-end;
@@ -514,12 +524,20 @@ html {
   background-color: rgba(220, 102, 102, 0.9);
   transform: translateY(-1px); }
 
+.navigation__title {
+  color: white; }
+
+.hamburger {
+  background-color: #5c8eff;
+  padding: 1rem;
+  margin: 1rem;
+  border-color: white; }
+
 .bar {
   display: block;
   width: 6rem;
   height: 0.6rem;
   margin: 1rem auto;
-  margin-left: 1rem;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
