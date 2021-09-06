@@ -563,9 +563,9 @@ html {
   background-color: white; }
   @media only screen and (max-width: 37.5em) {
     .bar {
-      width: 3rem;
-      height: 0.3rem;
-      margin: 0.5rem auto; } }
+      width: 3em;
+      height: 0.3em;
+      margin: 0.5em auto; } }
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0; }
@@ -574,13 +574,13 @@ html {
   transform: translateY(1.65rem) rotate(135deg); }
   @media only screen and (max-width: 37.5em) {
     .hamburger.active .bar:nth-child(1) {
-      transform: translateY(0.85rem) rotate(135deg); } }
+      transform: translateY(0.85em) rotate(135deg); } }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-1.65rem) rotate(-135deg); }
   @media only screen and (max-width: 37.5em) {
     .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-0.85rem) rotate(-135deg); } }
+      transform: translateY(-0.85em) rotate(-135deg); } }
 
 .gallery-1 {
   margin-top: 3rem; }
