@@ -34,8 +34,13 @@ html {
     html {
       font-size: 15%; } }
 
-h1 {
-  font-size: 12rem; }
+@media only screen and (max-width: 50em) {
+  h1 {
+    font-size: 7.2rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  h1 {
+    font-size: 12rem; } }
 
 .nav__link {
   color: white;
@@ -189,7 +194,7 @@ h1 {
 @media only screen and (max-width: 50em) {
   .navigation__title {
     grid-column: 2 / span 2;
-    justify-self: center;
+    justify-self: end;
     align-self: center;
     margin-right: 1rem; } }
 
@@ -532,13 +537,20 @@ h1 {
   transform: translateY(-1px); }
 
 .navigation__title {
-  color: white; }
+  color: white;
+  margin: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__title {
+      margin: 1rem; } }
 
 .hamburger {
   background-color: #5c8eff;
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 2rem;
   border-color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger {
+      margin: 1rem; } }
 
 .bar {
   display: block;

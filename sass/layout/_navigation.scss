@@ -41,6 +41,11 @@
 .navigation {
 	&__title {
 		color: white;
+		margin: 2rem;
+
+		@media only screen and (max-width: $bp-small) {
+			margin: 1rem;
+		}
 	}
 }
 
@@ -49,9 +54,13 @@
 .hamburger {
 	background-color: $color-header;
 	padding: 0.5rem;
-	margin: 1rem;
+	margin: 2rem;
 	// border-color: $color-hand-writing-2;
 	border-color: white;
+
+	@media only screen and (max-width: $bp-small) {
+		margin: 1rem;
+	}
 }
 
 .bar {
