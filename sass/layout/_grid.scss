@@ -403,6 +403,9 @@
 			grid-column: 1 / span 4;
 			justify-self: center;
 		}
+		// @media only screen and (max-width: $bp-smallest) {
+		// 	grid-column: 1 / span 4;
+		// }
 	}
 
 	&__heading {
@@ -426,9 +429,6 @@
 		}
 		@media only screen and (max-width: $bp-small) {
 			grid-column: 5 / -1;
-		}
-		@media only screen and (max-width: $bp-smallest) {
-			grid-column: 4 / -1;
 		}
 	}
 }

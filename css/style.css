@@ -455,9 +455,6 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
         grid-column: 5 / -1; } }
-    @media only screen and (max-width: 25em) {
-      .contacts__txt {
-        grid-column: 4 / -1; } }
 
 .footer {
   grid-column: full-start / full-end;
@@ -681,6 +678,9 @@ h1 {
       .contacts__txt {
         padding: 1rem;
         margin-right: 1rem; } }
+    @media only screen and (max-width: 25em) {
+      .contacts__txt {
+        margin-right: 0rem; } }
   .contacts__link {
     color: black;
     list-style: none; }
