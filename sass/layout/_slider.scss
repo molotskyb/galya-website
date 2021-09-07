@@ -2,6 +2,10 @@
 	// margin-top: 9rem;
 	margin-bottom: 9rem;
 
+	@media only screen and (max-width: $bp-small) {
+		margin-bottom: 12vh;
+	}
+
 	&__photo {
 		object-fit: cover;
 		height: 100%;

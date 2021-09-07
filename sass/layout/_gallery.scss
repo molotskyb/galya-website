@@ -2,7 +2,7 @@
 	margin-top: 3rem;
 
 	@media only screen and (max-width: $bp-small) {
-		margin-top: 3rem;
+		margin-top: 3em;
 	}
 	// @media only screen and (max-width: $bp-smallest) {
 	// 	margin-top: 6rem;
@@ -20,6 +20,7 @@
 
 	@media only screen and (max-width: $bp-small) {
 		margin-top: 1rem;
+		margin-bottom: 12vh;
 	}
 
 	&__img {
