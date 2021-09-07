@@ -129,7 +129,7 @@ h1 {
       font-size: 3.6rem; } }
   @media only screen and (max-width: 37.5em) {
     .contacts__txt {
-      font-size: 7.2rem; } }
+      font-size: 6.4rem; } }
 
 .footer {
   color: white;
@@ -455,11 +455,13 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
         grid-column: 5 / -1; } }
+    @media only screen and (max-width: 25em) {
+      .contacts__txt {
+        grid-column: 4 / -1; } }
 
 .footer {
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   justify-items: center;
   align-items: center; }
@@ -677,8 +679,8 @@ h1 {
     margin: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
-        padding: 2rem;
-        margin-right: -2rem; } }
+        padding: 1rem;
+        margin-right: 1rem; } }
   .contacts__link {
     color: black;
     list-style: none; }
@@ -703,9 +705,9 @@ h1 {
       transition: all 0.2s; }
       @media only screen and (max-width: 37.5em) {
         .nav-contacts__link:link svg, .nav-contacts__link:visited svg {
-          height: 2.2rem;
-          width: 2.2rem;
-          margin-left: -2rem; } }
+          height: 1.2em;
+          width: 1.2em;
+          margin-left: -1rem; } }
   .nav-contacts__link:hover, .nav-contacts__link:active {
     background-color: rgba(158, 157, 157, 0.05);
     color: white;

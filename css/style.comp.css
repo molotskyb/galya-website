@@ -14,7 +14,7 @@ body {
   padding: 3rem; }
   @media only screen and (max-width: 37.5em) {
     body {
-      padding: 1rem; } }
+      padding: 1.5rem; } }
 
 html {
   font-size: 62.5%; }
@@ -34,13 +34,14 @@ html {
     html {
       font-size: 15%; } }
 
-@media only screen and (max-width: 50em) {
-  h1 {
-    font-size: 7.2rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  h1 {
-    font-size: 12rem; } }
+h1 {
+  font-family: "Dancing Script", cursive; }
+  @media only screen and (max-width: 50em) {
+    h1 {
+      font-size: 7.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 12rem; } }
 
 .nav__link {
   color: white;
@@ -128,16 +129,16 @@ html {
       font-size: 3.6rem; } }
   @media only screen and (max-width: 37.5em) {
     .contacts__txt {
-      font-size: 7.2rem; } }
+      font-size: 6.4rem; } }
 
-.footer {
+.contacts .footer {
   color: white;
-  font-size: 1.8rem; }
+  font-size: 7.2rem; }
   @media only screen and (max-width: 50em) {
-    .footer {
+    .contacts .footer {
       font-size: 3.6rem; } }
   @media only screen and (max-width: 37.5em) {
-    .footer {
+    .contacts .footer {
       font-size: 5.8rem; } }
 
 .container {
@@ -177,10 +178,8 @@ html {
     .nav__links {
       display: none; } }
   .nav__links.active {
-    display: inline-block;
-    margin-left: 28rem;
-    align-items: stretch;
-    justify-items: stretch; }
+    display: block;
+    float: right; }
 
 .navigation-mobile {
   display: none; }
@@ -188,14 +187,14 @@ html {
     .navigation-mobile {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      grid-column: 6 / span 1;
+      grid-column: 5 / span 1;
       justify-items: end;
       align-items: center; } }
 
 @media only screen and (max-width: 50em) {
   .navigation__title {
     grid-column: 1 / span 5;
-    justify-self: end;
+    justify-self: center;
     align-self: center; } }
 
 .gallery-1 {
@@ -436,7 +435,7 @@ html {
         grid-column: 3 / span 2; } }
     @media only screen and (max-width: 37.5em) {
       .contacts__pic {
-        grid-column: 2 / span 2;
+        grid-column: 1 / span 4;
         justify-self: center; } }
   .contacts__heading {
     grid-column: 4 / 8;
@@ -455,12 +454,11 @@ html {
         grid-column: 6 / span 4; } }
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
-        grid-column: 4 / -1; } }
+        grid-column: 5 / -1; } }
 
 .footer {
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   justify-items: center;
   align-items: center; }
@@ -537,11 +535,16 @@ html {
   transform: translateY(-1px); }
 
 .navigation__title {
-  color: white;
+  color: gold;
   margin: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .navigation__title {
+      margin: 1rem;
+      margin-left: 22%; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__title {
-      margin: 1rem; } }
+      margin: 1rem;
+      margin-left: 19%; } }
 
 .hamburger {
   background-color: #5c8eff;
@@ -643,7 +646,7 @@ html {
     display: block;
     color: #00165f;
     transition: all 0.6s ease-in-out;
-    transform: translateY(-0.3rem) scale(1.16); }
+    transform: translateY(-0.3rem) scale(1.02); }
 
 .contacts {
   margin-top: 12rem;
@@ -657,8 +660,8 @@ html {
     height: 36rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__img {
-        width: 14rem;
-        height: 18rem;
+        width: 100%;
+        height: 90%;
         margin-top: 4rem; } }
   .contacts__heading {
     background-color: #dc6666;
@@ -673,8 +676,8 @@ html {
     margin: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
-        padding: 2rem;
-        margin-right: -2rem; } }
+        padding: 1rem;
+        margin-right: 1rem; } }
   .contacts__link {
     color: black;
     list-style: none; }
@@ -699,9 +702,9 @@ html {
       transition: all 0.2s; }
       @media only screen and (max-width: 37.5em) {
         .nav-contacts__link:link svg, .nav-contacts__link:visited svg {
-          height: 2.2rem;
-          width: 2.2rem;
-          margin-left: -2rem; } }
+          height: 1.2em;
+          width: 1.2em;
+          margin-left: -1rem; } }
   .nav-contacts__link:hover, .nav-contacts__link:active {
     background-color: rgba(158, 157, 157, 0.05);
     color: white;
