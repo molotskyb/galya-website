@@ -12,7 +12,7 @@
 		@media only screen and (max-width: $bp-small) {
 			max-height: 61vh;
 			max-width: 68vw;
-			margin-bottom: 6vh;
+			margin-bottom: 3vh;
 		}
 	}
 
@@ -22,7 +22,7 @@
 		margin-bottom: 12rem;
 
 		@media only screen and (max-width: $bp-small) {
-			margin-bottom: 6rem;
+			margin-bottom: 3vh;
 		}
 	}
 
@@ -32,22 +32,22 @@
 		&--1 {
 			background-color: $color-text;
 			margin: 0.5em;
-			margin-bottom: 6vh;
+			margin-bottom: 3vh;
 		}
 		&--2 {
 			background-color: $color-text;
 			margin: 0.5em;
-			margin-bottom: 6vh;
+			margin-bottom: 3vh;
 		}
 		&--3 {
 			background-color: $color-text;
 			margin: 0.5em;
-			margin-bottom: 6vh;
+			margin-bottom: 3vh;
 		}
 		&--4 {
 			background-color: $color-text;
 			margin: 0.5em;
-			margin-bottom: 6vh;
+			margin-bottom: 3vh;
 		}
 		box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 	}
