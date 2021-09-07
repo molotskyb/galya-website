@@ -14,7 +14,10 @@ body {
   padding: 3rem; }
   @media only screen and (max-width: 37.5em) {
     body {
-      padding: 1.5rem; } }
+      padding: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    body {
+      padding: 1rem; } }
 
 html {
   font-size: 62.5%; }
@@ -35,7 +38,8 @@ html {
       font-size: 15%; } }
 
 h1 {
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  font-size: 6.4rem; }
   @media only screen and (max-width: 50em) {
     h1 {
       font-size: 7.2rem; } }
@@ -131,14 +135,14 @@ h1 {
     .contacts__txt {
       font-size: 6.4rem; } }
 
-.contacts .footer {
+.footer {
   color: white;
-  font-size: 7.2rem; }
+  font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
-    .contacts .footer {
+    .footer {
       font-size: 3.6rem; } }
   @media only screen and (max-width: 37.5em) {
-    .contacts .footer {
+    .footer {
       font-size: 5.8rem; } }
 
 .container {
@@ -149,7 +153,13 @@ h1 {
 .header {
   grid-column: full-start / full-end;
   position: sticky;
-  top: 3vh; }
+  top: 3vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .header__item--1 {
+    grid-column: 1 / 2; }
+  .header__item--2 {
+    grid-column: 2 / 3; }
   .header--2 {
     grid-column: full-start / full-end;
     position: sticky;
@@ -169,6 +179,7 @@ h1 {
         height: 8vh; } }
 
 .nav__links {
+  grid-column: 2 / span 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
@@ -465,6 +476,9 @@ h1 {
 
 .slider {
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 37.5em) {
+    .slider {
+      margin-bottom: 6vh; } }
   .slider__photo {
     object-fit: cover;
     height: 100%;
@@ -481,7 +495,7 @@ h1 {
         height: 12vh; } }
     @media only screen and (max-width: 50em) {
       .header--2 {
-        height: 13.5vh; } }
+        height: 12vh; } }
     @media only screen and (max-width: 25em) {
       .header--2 {
         height: 12vh; } }
@@ -545,6 +559,12 @@ h1 {
     .navigation__title {
       margin: 1rem;
       margin-left: 19%; } }
+  .navigation__title--2 {
+    color: gold;
+    margin: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .navigation__title--2 {
+        display: none; } }
 
 .hamburger {
   background-color: #5c8eff;
@@ -589,7 +609,7 @@ h1 {
   margin-top: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .gallery-1 {
-      margin-top: 3rem; } }
+      margin-top: 3em; } }
   .gallery-1__img {
     object-fit: cover;
     height: 100%;
@@ -600,7 +620,8 @@ h1 {
   margin-top: 6rem; }
   @media only screen and (max-width: 37.5em) {
     .gallery-2 {
-      margin-top: 1rem; } }
+      margin-top: 1rem;
+      margin-bottom: 3vh; } }
   .gallery-2__img {
     object-fit: cover;
     width: 100%;
@@ -611,37 +632,42 @@ h1 {
   margin-top: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .reviews {
-      margin-top: 6rem; } }
+      margin-top: 3vh; } }
   .reviews__img {
     max-height: 61vh;
     max-width: 25vw; }
     @media only screen and (max-width: 37.5em) {
       .reviews__img {
         max-height: 61vh;
-        max-width: 68vw; } }
+        max-width: 68vw;
+        margin-bottom: 3vh; } }
   .reviews__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .reviews__heading {
-        margin-bottom: 6rem; } }
+        margin-bottom: 6vh; } }
   .reviews__txt {
     padding: 2rem;
     color: #2252c2;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .reviews__txt--1 {
       background-color: #f3f2f2;
-      margin: 2rem; }
+      margin: 0.5em;
+      margin-bottom: 3vh; }
     .reviews__txt--2 {
       background-color: #f3f2f2;
-      margin: 2rem; }
+      margin: 0.5em;
+      margin-bottom: 3vh; }
     .reviews__txt--3 {
       background-color: #f3f2f2;
-      margin: 2rem; }
+      margin: 0.5em;
+      margin-bottom: 3vh; }
     .reviews__txt--4 {
       background-color: #f3f2f2;
-      margin: 2rem; }
+      margin: 0.5em;
+      margin-bottom: 3vh; }
   .reviews__txt:hover, .reviews__txt:active {
     display: block;
     color: #00165f;
@@ -653,8 +679,8 @@ h1 {
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .contacts {
-      margin-top: 6rem;
-      margin-bottom: 6rem; } }
+      margin-top: 6vh;
+      margin-bottom: 6vh; } }
   .contacts__img {
     width: 28rem;
     height: 36rem; }
@@ -669,7 +695,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__heading {
-        margin-bottom: 3rem; } }
+        margin-bottom: 3vh; } }
   .contacts__txt {
     background-color: #f4a460;
     padding: 4rem;
@@ -678,6 +704,9 @@ h1 {
       .contacts__txt {
         padding: 1rem;
         margin-right: 1rem; } }
+    @media only screen and (max-width: 25em) {
+      .contacts__txt {
+        margin-right: 0rem; } }
   .contacts__link {
     color: black;
     list-style: none; }
@@ -716,7 +745,7 @@ h1 {
   margin-top: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .about {
-      margin-top: 6rem; } }
+      margin-top: 6vh; } }
   .about__img {
     max-height: 61vh;
     max-width: 25vw; }
@@ -727,14 +756,15 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .about__img {
         max-height: 61vh;
-        max-width: 68vw; } }
+        max-width: 68vw;
+        margin-bottom: 3vh; } }
   .about__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        margin-bottom: 6rem; } }
+        margin-bottom: 6vh; } }
   .about__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
@@ -747,15 +777,16 @@ h1 {
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .quot {
-      margin-top: 6rem;
-      margin-bottom: 6rem; } }
+      margin-top: 6vh;
+      margin-bottom: 6vh; } }
 
 .tours {
   margin-top: 6rem;
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .tours {
-      margin-top: -1rem; } }
+      margin-top: 0rem;
+      margin-bottom: 3vh; } }
   .tours__img {
     max-height: 61vh;
     max-width: 25vw; }
@@ -766,17 +797,19 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .tours__img {
         max-height: 61vh;
-        max-width: 68vw; } }
+        max-width: 68vw;
+        margin-bottom: 3vh; } }
   .tours__heading {
     background-color: #dc6666;
     padding: 1rem 4rem;
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .tours__heading {
-        margin-bottom: 6rem; } }
+        margin-bottom: 6vh; } }
   .tours__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
     @media only screen and (max-width: 50em) {
       .tours__txt {
-        padding: 3rem; } }
+        padding: 3rem;
+        margin-bottom: 6vh; } }

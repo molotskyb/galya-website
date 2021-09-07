@@ -20,6 +20,8 @@ html {
 
 h1 {
 	font-family: $headline-font-family;
+	font-size: $medium-font-size-4;
+
 	@media only screen and (max-width: $bp-medium) {
 		font-size: $huge-font-size;
 	}

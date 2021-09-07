@@ -38,7 +38,8 @@ html {
       font-size: 15%; } }
 
 h1 {
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem; }
   @media only screen and (max-width: 50em) {
     h1 {
       font-size: 7.2rem; } }
@@ -551,6 +552,12 @@ h1 {
     .navigation__title {
       margin: 1rem;
       margin-left: 19%; } }
+  .navigation__title--2 {
+    color: gold;
+    margin: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .navigation__title--2 {
+        display: none; } }
 
 .hamburger {
   background-color: #5c8eff;
