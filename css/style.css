@@ -14,7 +14,7 @@ body {
   padding: 3rem; }
   @media only screen and (max-width: 37.5em) {
     body {
-      padding: 1rem; } }
+      padding: 1.5rem; } }
 
 html {
   font-size: 62.5%; }
@@ -647,7 +647,7 @@ h1 {
     display: block;
     color: #00165f;
     transition: all 0.6s ease-in-out;
-    transform: translateY(-0.3rem) scale(1.16); }
+    transform: translateY(-0.3rem) scale(1.02); }
 
 .contacts {
   margin-top: 12rem;
@@ -661,8 +661,8 @@ h1 {
     height: 36rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__img {
-        width: 14rem;
-        height: 18rem;
+        width: 120%;
+        height: 100%;
         margin-top: 4rem; } }
   .contacts__heading {
     background-color: #dc6666;
