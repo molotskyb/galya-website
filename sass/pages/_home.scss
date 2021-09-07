@@ -26,7 +26,7 @@
 		margin-bottom: 12rem;
 
 		@media only screen and (max-width: $bp-small) {
-			margin-bottom: 12vh;
+			margin-bottom: 3vh;
 		}
 	}
 
@@ -80,7 +80,7 @@
 		margin-bottom: 12rem;
 
 		@media only screen and (max-width: $bp-small) {
-			margin-bottom: 12vh;
+			margin-bottom: 3vh;
 		}
 	}
 	&__txt {
@@ -89,6 +89,7 @@
 
 		@media only screen and (max-width: $bp-medium) {
 			padding: 3rem;
+			margin-bottom: 9vh;
 		}
 	}
 }

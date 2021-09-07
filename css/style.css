@@ -633,7 +633,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .reviews__heading {
-        margin-bottom: 12vh; } }
+        margin-bottom: 3vh; } }
   .reviews__txt {
     padding: 2rem;
     color: #2252c2;
@@ -681,7 +681,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__heading {
-        margin-bottom: 12vh; } }
+        margin-bottom: 3vh; } }
   .contacts__txt {
     background-color: #f4a460;
     padding: 4rem;
@@ -750,7 +750,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        margin-bottom: 12vh; } }
+        margin-bottom: 3vh; } }
   .about__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
@@ -791,10 +791,11 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .tours__heading {
-        margin-bottom: 12vh; } }
+        margin-bottom: 3vh; } }
   .tours__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
     @media only screen and (max-width: 50em) {
       .tours__txt {
-        padding: 3rem; } }
+        padding: 3rem;
+        margin-bottom: 9vh; } }
