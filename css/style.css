@@ -470,7 +470,7 @@ h1 {
   margin-bottom: 9rem; }
   @media only screen and (max-width: 37.5em) {
     .slider {
-      margin-bottom: 12vh; } }
+      margin-bottom: 6vh; } }
   .slider__photo {
     object-fit: cover;
     height: 100%;
@@ -607,7 +607,7 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .gallery-2 {
       margin-top: 1rem;
-      margin-bottom: 6vh; } }
+      margin-bottom: 3vh; } }
   .gallery-2__img {
     object-fit: cover;
     width: 100%;
@@ -618,7 +618,7 @@ h1 {
   margin-top: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .reviews {
-      margin-top: 6rem; } }
+      margin-top: 3vh; } }
   .reviews__img {
     max-height: 61vh;
     max-width: 25vw; }
@@ -633,7 +633,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .reviews__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 6vh; } }
   .reviews__txt {
     padding: 2rem;
     color: #2252c2;
@@ -665,8 +665,8 @@ h1 {
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .contacts {
-      margin-top: 12vh;
-      margin-bottom: 12vh; } }
+      margin-top: 6vh;
+      margin-bottom: 6vh; } }
   .contacts__img {
     width: 28rem;
     height: 36rem; }
@@ -731,7 +731,7 @@ h1 {
   margin-top: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .about {
-      margin-top: 12vh; } }
+      margin-top: 6vh; } }
   .about__img {
     max-height: 61vh;
     max-width: 25vw; }
@@ -750,7 +750,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 6vh; } }
   .about__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
@@ -763,15 +763,15 @@ h1 {
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .quot {
-      margin-top: 12vh;
-      margin-bottom: 12vh; } }
+      margin-top: 6vh;
+      margin-bottom: 6vh; } }
 
 .tours {
   margin-top: 6rem;
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .tours {
-      margin-top: -1rem;
+      margin-top: 0rem;
       margin-bottom: 3vh; } }
   .tours__img {
     max-height: 61vh;
@@ -791,11 +791,11 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .tours__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 6vh; } }
   .tours__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
     @media only screen and (max-width: 50em) {
       .tours__txt {
         padding: 3rem;
-        margin-bottom: 9vh; } }
+        margin-bottom: 6vh; } }
