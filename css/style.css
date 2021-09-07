@@ -34,13 +34,14 @@ html {
     html {
       font-size: 15%; } }
 
-@media only screen and (max-width: 50em) {
-  h1 {
-    font-size: 7.2rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  h1 {
-    font-size: 12rem; } }
+h1 {
+  font-family: "Dancing Script", cursive; }
+  @media only screen and (max-width: 50em) {
+    h1 {
+      font-size: 7.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 12rem; } }
 
 .nav__link {
   color: white;
@@ -177,7 +178,7 @@ html {
     .nav__links {
       display: none; } }
   .nav__links.active {
-    display: inline-block;
+    display: block;
     float: right; }
 
 .navigation-mobile {
@@ -535,16 +536,16 @@ html {
   transform: translateY(-1px); }
 
 .navigation__title {
-  color: white;
+  color: gold;
   margin: 2rem; }
   @media only screen and (max-width: 50em) {
     .navigation__title {
       margin: 1rem;
-      margin-left: 14rem; } }
+      margin-left: 22%; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__title {
       margin: 1rem;
-      margin-left: 7rem; } }
+      margin-left: 19%; } }
 
 .hamburger {
   background-color: #5c8eff;

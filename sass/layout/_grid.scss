@@ -49,13 +49,16 @@
 	}
 
 	&.active {
-		display: inline-block;
+		display: block;
 		float: right;
-		// margin-left: 12em;
-		// align-items: stretch;
-		// justify-items: stretch;
+		// margin-left: 28%;
 
-		// top: 20vh;
+		// @media only screen and (max-width: $bp-medium) {
+		// 	margin-left: 38.5%;
+		// }
+		// @media only screen and (max-width: $bp-small) {
+		// 	margin-left: 32.5%;
+		// }
 	}
 }
 

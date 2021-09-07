@@ -40,16 +40,16 @@
 
 .navigation {
 	&__title {
-		color: white;
+		color: gold;
 		margin: 2rem;
 
 		@media only screen and (max-width: $bp-medium) {
 			margin: 1rem;
-			margin-left: 14rem;
+			margin-left: 22%;
 		}
 		@media only screen and (max-width: $bp-small) {
 			margin: 1rem;
-			margin-left: 7rem;
+			margin-left: 19%;
 		}
 	}
 }
