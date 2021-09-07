@@ -26,7 +26,7 @@
 		margin-bottom: 12rem;
 
 		@media only screen and (max-width: $bp-small) {
-			margin-bottom: 3vh;
+			margin-bottom: 12vh;
 		}
 	}
 
@@ -45,8 +45,8 @@
 	margin-bottom: 12rem;
 
 	@media only screen and (max-width: $bp-small) {
-		margin-top: 6em;
-		margin-bottom: 6em;
+		margin-top: 12vh;
+		margin-bottom: 12vh;
 	}
 }
 
@@ -56,6 +56,7 @@
 
 	@media only screen and (max-width: $bp-small) {
 		margin-top: -1rem;
+		margin-bottom: 3vh;
 	}
 
 	&__img {
@@ -79,7 +80,7 @@
 		margin-bottom: 12rem;
 
 		@media only screen and (max-width: $bp-small) {
-			margin-bottom: 3vh;
+			margin-bottom: 12vh;
 		}
 	}
 	&__txt {

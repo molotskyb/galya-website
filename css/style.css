@@ -607,7 +607,7 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .gallery-2 {
       margin-top: 1rem;
-      margin-bottom: 12vh; } }
+      margin-bottom: 6vh; } }
   .gallery-2__img {
     object-fit: cover;
     width: 100%;
@@ -633,7 +633,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .reviews__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 12vh; } }
   .reviews__txt {
     padding: 2rem;
     color: #2252c2;
@@ -681,7 +681,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .contacts__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 12vh; } }
   .contacts__txt {
     background-color: #f4a460;
     padding: 4rem;
@@ -750,7 +750,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .about__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 12vh; } }
   .about__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
@@ -763,15 +763,16 @@ h1 {
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .quot {
-      margin-top: 6em;
-      margin-bottom: 6em; } }
+      margin-top: 12vh;
+      margin-bottom: 12vh; } }
 
 .tours {
   margin-top: 6rem;
   margin-bottom: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .tours {
-      margin-top: -1rem; } }
+      margin-top: -1rem;
+      margin-bottom: 3vh; } }
   .tours__img {
     max-height: 61vh;
     max-width: 25vw; }
@@ -790,7 +791,7 @@ h1 {
     margin-bottom: 12rem; }
     @media only screen and (max-width: 37.5em) {
       .tours__heading {
-        margin-bottom: 3vh; } }
+        margin-bottom: 12vh; } }
   .tours__txt {
     background-color: #f3f2f2;
     padding: 6rem; }
