@@ -34,15 +34,25 @@ html {
     html {
       font-size: 15%; } }
 
-h1 {
-  font-size: 7.2rem; }
+@media only screen and (max-width: 50em) {
+  h1 {
+    font-size: 7.2rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  h1 {
+    font-size: 12rem; } }
 
 .nav__link {
   color: white;
   font-size: 1.8rem; }
   @media only screen and (max-width: 50em) {
     .nav__link {
-      font-size: 3.4rem; } }
+      font-size: 4.2rem;
+      font-weight: 600; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav__link {
+      font-size: 6.4rem;
+      font-weight: 900; } }
 
 .about__heading {
   font-size: 3.6rem;
@@ -166,19 +176,27 @@ h1 {
   @media only screen and (max-width: 50em) {
     .nav__links {
       display: none; } }
+  .nav__links.active {
+    display: inline-block;
+    margin-left: 28rem;
+    align-items: stretch;
+    justify-items: stretch; }
 
 .navigation-mobile {
   display: none; }
   @media only screen and (max-width: 50em) {
     .navigation-mobile {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column: 2 / span 1;
-      justify-items: flex-start;
+      grid-template-columns: repeat(6, 1fr);
+      grid-column: 6 / span 1;
+      justify-items: end;
       align-items: center; } }
-  @media only screen and (max-width: 50em) {
-    .navigation-mobile__title {
-      grid-column: 3 / 3; } }
+
+@media only screen and (max-width: 50em) {
+  .navigation__title {
+    grid-column: 1 / span 5;
+    justify-self: end;
+    align-self: center; } }
 
 .gallery-1 {
   grid-column: full-start / full-end;
@@ -496,6 +514,9 @@ h1 {
 
 .nav__link {
   text-decoration: none; }
+  @media only screen and (max-width: 50em) {
+    .nav__link {
+      padding: 1rem; } }
 
 .nav__flag {
   max-height: 8vh;
@@ -503,12 +524,8 @@ h1 {
   padding-top: 1.2rem; }
   @media only screen and (max-width: 50em) {
     .nav__flag {
-      max-height: 14vh;
-      max-width: 14vw; } }
-  @media only screen and (max-width: 25em) {
-    .nav__flag {
-      max-height: 18vh;
-      max-width: 18vw; } }
+      max-height: 10vh;
+      max-width: 12vw; } }
 
 .nav__link:link, .nav__link:visited {
   display: block;
@@ -519,11 +536,21 @@ h1 {
   background-color: rgba(220, 102, 102, 0.9);
   transform: translateY(-1px); }
 
+.navigation__title {
+  color: white;
+  margin: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__title {
+      margin: 1rem; } }
+
 .hamburger {
   background-color: #5c8eff;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 2rem;
   border-color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger {
+      margin: 1rem; } }
 
 .bar {
   display: block;
@@ -534,15 +561,26 @@ h1 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .bar {
+      width: 3em;
+      height: 0.3em;
+      margin: 0.5em auto; } }
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0; }
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(1.65rem) rotate(135deg); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(0.85em) rotate(135deg); } }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-1.65rem) rotate(-135deg); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-0.85em) rotate(-135deg); } }
 
 .gallery-1 {
   margin-top: 3rem; }

@@ -177,26 +177,24 @@ html {
     .nav__links {
       display: none; } }
   .nav__links.active {
-    display: block;
-    margin-left: 1rem; }
+    display: inline-block;
+    float: right; }
 
 .navigation-mobile {
   display: none; }
   @media only screen and (max-width: 50em) {
     .navigation-mobile {
-      grid-column: full-start / full-end;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column: 2 / span 1;
-      justify-items: flex-start;
+      grid-template-columns: repeat(6, 1fr);
+      grid-column: 5 / span 1;
+      justify-items: end;
       align-items: center; } }
 
 @media only screen and (max-width: 50em) {
   .navigation__title {
-    grid-column: 2 / span 2;
-    justify-self: end;
-    align-self: center;
-    margin-right: 1rem; } }
+    grid-column: 1 / span 5;
+    justify-self: center;
+    align-self: center; } }
 
 .gallery-1 {
   grid-column: full-start / full-end;
@@ -539,9 +537,14 @@ html {
 .navigation__title {
   color: white;
   margin: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .navigation__title {
+      margin: 1rem;
+      margin-left: 14rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__title {
-      margin: 1rem; } }
+      margin: 1rem;
+      margin-left: 7rem; } }
 
 .hamburger {
   background-color: #5c8eff;
