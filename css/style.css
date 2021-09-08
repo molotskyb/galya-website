@@ -495,6 +495,30 @@ h1 {
     .slider-mobile {
       visibility: visible;
       margin-bottom: 6vh; } }
+  .slider-mobile__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: #5c8dffe0;
+    color: white;
+    height: 3.5em;
+    width: 3.5em;
+    font-size: 6.4rem;
+    font-weight: 900;
+    cursor: pointer; }
+    .slider-mobile__btn--left {
+      left: 6%;
+      transform: translate(-50%, -50%); }
+    .slider-mobile__btn--right {
+      right: 6%;
+      transform: translate(50%, -50%); }
+
+.slide-mobile > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .slide-mobile {
   position: absolute;
@@ -503,33 +527,6 @@ h1 {
   height: 100%;
   /* THIS creates the animation! */
   transition: transform 1s; }
-
-.slide-mobile > img {
-  /* Only for images that have different size than slide */
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.slider-mobile__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  border: none;
-  background: #5c8dffe0;
-  color: white;
-  height: 3.5em;
-  width: 3.5em;
-  font-size: 6.4rem;
-  font-weight: 900;
-  cursor: pointer; }
-
-.slider-mobile__btn--left {
-  left: 6%;
-  transform: translate(-50%, -50%); }
-
-.slider-mobile__btn--right {
-  right: 6%;
-  transform: translate(50%, -50%); }
 
 .header {
   background-color: #5c8eff;
