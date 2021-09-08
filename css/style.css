@@ -277,7 +277,8 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .slider-mobile {
       grid-column: full-start / full-end;
-      display: block; } }
+      display: grid;
+      grid-template-rows: 75vh; } }
 
 .tours {
   grid-column: full-start / full-end;
@@ -492,9 +493,7 @@ h1 {
   visibility: hidden; }
   @media only screen and (max-width: 37.5em) {
     .slider-mobile {
-      min-height: 60em;
       visibility: visible;
-      position: relative;
       margin-bottom: 6vh; } }
 
 .slide-mobile {

@@ -193,10 +193,8 @@
 
 	@media only screen and (max-width: $bp-small) {
 		grid-column: full-start / full-end;
-		display: block;
-		// grid-template-columns: repeat(4, 1fr);
-
-		// grid-column: 1 / -1;
+		display: grid;
+		grid-template-rows: 75vh;
 	}
 }
 
