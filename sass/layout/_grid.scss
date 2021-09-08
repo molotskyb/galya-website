@@ -444,6 +444,12 @@
 			grid-column: 5 / -1;
 		}
 	}
+
+	&__form {
+		grid-column: 4 / 8;
+		grid-row: 3 / span 1;
+		justify-self: center;
+	}
 }
 
 .footer {

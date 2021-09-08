@@ -466,6 +466,10 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .contacts__txt {
         grid-column: 5 / -1; } }
+  .contacts__form {
+    grid-column: 4 / 8;
+    grid-row: 3 / span 1;
+    justify-self: center; }
 
 .footer {
   grid-column: full-start / full-end;

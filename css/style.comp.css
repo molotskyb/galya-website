@@ -19,6 +19,15 @@ body {
     body {
       padding: 1rem; } }
 
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; }
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh; }
+
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
@@ -270,11 +279,15 @@ h1 {
   grid-gap: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .slider {
-      grid-gap: 0.5rem;
-      grid-template-rows: 54vw; } }
+      display: none; } }
 
 .slider-mobile {
-  grid-column: 1 / -1; }
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .slider-mobile {
+      grid-column: full-start / full-end;
+      display: grid;
+      grid-template-rows: 75vh; } }
 
 .tours {
   grid-column: full-start / full-end;
@@ -487,48 +500,42 @@ h1 {
   /* IN THE END */
   overflow: hidden;
   visibility: hidden; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 37.5em) {
     .slider-mobile {
-      height: 50rem;
       visibility: visible;
-      position: relative; } }
-
-.slide-mobile {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* THIS creates the animation! */
-  transition: transform 1s; }
+      margin-bottom: 6vh; } }
+  .slider-mobile__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: #5c8dffe0;
+    color: white;
+    height: 3.5em;
+    width: 3.5em;
+    font-size: 6.4rem;
+    font-weight: 900;
+    cursor: pointer; }
+    .slider-mobile__btn--left {
+      left: 6%;
+      transform: translate(-50%, -50%); }
+    .slider-mobile__btn--right {
+      right: 6%;
+      transform: translate(50%, -50%); }
 
 .slide-mobile > img {
   /* Only for images that have different size than slide */
   width: 100%;
   height: 100%;
-  object-fit: contain; }
+  object-fit: cover; }
 
-.slider-mobile__btn {
+.slide-mobile {
   position: absolute;
-  top: 50%;
-  z-index: 10;
-  border: none;
-  background: red;
-  color: black;
-  height: 5.5rem;
-  width: 3.5rem;
-  font-size: 3.6rem;
-  cursor: pointer; }
-
-.slider-mobile__btn--left {
-  left: 6%;
-  transform: translate(-50%, -50%); }
-
-.slider-mobile__btn--right {
-  right: 6%;
-  transform: translate(50%, -50%); }
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* THIS creates the animation! */
+  transition: transform 1s; }
 
 .header {
   background-color: #5c8eff;
