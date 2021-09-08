@@ -180,8 +180,23 @@
 	grid-gap: 1rem;
 
 	@media only screen and (max-width: $bp-small) {
-		grid-gap: 0.5rem;
-		grid-template-rows: 54vw;
+		// grid-gap: 0.5rem;
+		// grid-template-rows: 54vw;
+
+		display: none;
+	}
+}
+
+.slider-mobile {
+	// display: grid;
+	display: none;
+
+	@media only screen and (max-width: $bp-small) {
+		grid-column: full-start / full-end;
+		display: block;
+		// grid-template-columns: repeat(4, 1fr);
+
+		// grid-column: 1 / -1;
 	}
 }
 

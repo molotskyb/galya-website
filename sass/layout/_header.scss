@@ -1,8 +1,10 @@
 .header {
 	background-color: $color-header;
+	z-index: 1000;
 
 	//white backgroung wrapping the original header:
 	&--2 {
+		z-index: 900;
 		background-color: white;
 		margin-top: -18vh;
 

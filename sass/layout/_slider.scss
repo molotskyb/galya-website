@@ -13,3 +13,66 @@
 		display: block;
 	}
 }
+
+/* SLIDER-MOBILE */
+
+.slider-mobile {
+	position: relative;
+
+	/* IN THE END */
+	overflow: hidden;
+	visibility: hidden;
+
+	@media only screen and (max-width: $bp-small) {
+		height: 50rem;
+		visibility: visible;
+		position: relative;
+		margin-bottom: 6vh;
+	}
+}
+
+.slide-mobile {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50rem;
+	// height: 50vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* THIS creates the animation! */
+	transition: transform 1s;
+}
+
+.slide-mobile > img {
+	/* Only for images that have different size than slide */
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.slider-mobile__btn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	border: none;
+	background: $color-header-2;
+	color: white;
+	height: 3.5em;
+	width: 3.5em;
+	font-size: $big-font-size-4;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.slider-mobile__btn--left {
+	left: 6%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-mobile__btn--right {
+	right: 6%;
+	transform: translate(50%, -50%);
+}
