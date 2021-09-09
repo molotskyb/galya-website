@@ -147,6 +147,23 @@ h1 {
 	}
 }
 
+.form {
+	&__headline {
+		font-size: $medium-font-size-3;
+	}
+	&__div {
+		font-size: $medium-font-size-2;
+	}
+
+	&__input {
+		font-size: $small-font-size;
+	}
+
+	&__btn {
+		font-size: $medium-font-size-2;
+	}
+}
+
 .footer {
 	color: white;
 	font-size: $medium-font-size;

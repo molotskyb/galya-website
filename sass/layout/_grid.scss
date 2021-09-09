@@ -446,9 +446,11 @@
 	}
 
 	&__form {
-		grid-column: 4 / 8;
-		grid-row: 3 / span 1;
+		grid-column: 1 / -1;
+		grid-row: 3 / span 4;
+		display: grid;
 		justify-self: center;
+		align-self: center;
 	}
 }
 

@@ -32,7 +32,7 @@
 	}
 
 	&__txt {
-		background-color: #f4a460;
+		background-color: $color-contacts;
 		padding: 4rem;
 		margin: 4rem;
 
@@ -48,6 +48,12 @@
 	&__link {
 		color: black;
 		list-style: none;
+	}
+
+	&__form--1 {
+		background-color: $color-text;
+		margin: 6vh;
+		padding: 6rem;
 	}
 }
 
@@ -90,6 +96,56 @@
 		transform: translateY(-3px);
 		svg {
 			fill: white;
+		}
+	}
+}
+
+.form {
+	&__headline {
+		margin-bottom: 1em;
+		margin-left: 0.65em;
+	}
+
+	&__div {
+		padding: 1em;
+	}
+
+	&__label {
+		&--1 {
+			padding-right: 2em;
+		}
+		&--2 {
+			padding-right: 1.2em;
+		}
+		&--3 {
+			padding-right: 0.5em;
+		}
+		&--4 {
+			padding-right: 1.5em;
+		}
+	}
+	&__input {
+		width: 15em;
+	}
+
+	&__btn {
+		margin: 1em;
+		margin-top: 2em;
+		padding: 1em;
+		cursor: pointer;
+		color: white;
+		background-color: $color-header-2;
+
+		&:link,
+		&:visited {
+			transition: all 0.2s;
+		}
+
+		&:hover,
+		&:active {
+			padding: 1em;
+			background-color: rgba($color-heading-txt, 0.9);
+			transform: translateY(-3px);
 		}
 	}
 }
