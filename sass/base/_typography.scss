@@ -136,31 +136,50 @@ h1 {
 		font-size: $medium-font-size-2;
 
 		@media only screen and (max-width: $bp-medium) {
-			font-size: $big-font-size;
+			font-size: $medium-font-size-4;
 		}
 		@media only screen and (max-width: $bp-small) {
 			font-size: $big-font-size-4;
 		}
 		// @media only screen and (max-width: $bp-smallest) {
-		// 	font-size: $big-font-size-4;
+		// 	font-size: $big-font-size-2;
 		// }
 	}
 }
 
 .form {
 	&__headline {
-		font-size: $medium-font-size-3;
-	}
-	&__div {
 		font-size: $medium-font-size-2;
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
+	}
+	&__label {
+		font-size: $medium-font-size;
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-3;
+		}
 	}
 
 	&__input {
-		font-size: $small-font-size;
+		font-size: $medium-font-size-2;
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-4;
+		}
 	}
 
 	&__btn {
-		font-size: $medium-font-size-2;
+		font-size: $medium-font-size;
+		@media only screen and (max-width: $bp-small) {
+			font-size: $big-font-size-2;
+		}
+	}
+}
+
+textarea {
+	font-size: $medium-font-size-2;
+	@media only screen and (max-width: $bp-small) {
+		font-size: $big-font-size-4;
 	}
 }
 

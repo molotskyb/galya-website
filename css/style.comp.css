@@ -481,11 +481,9 @@ h1 {
   .contacts__form {
     grid-column: 1 / -1;
     grid-row: 3 / span 4;
-    display: grid; }
-    .contacts__form--1 {
-      grid-column: 3 / span 8;
-      justify-self: center;
-      align-self: center; }
+    display: grid;
+    justify-self: center;
+    align-self: center; }
 
 .footer {
   grid-column: full-start / full-end;
@@ -812,7 +810,8 @@ h1 {
       fill: white; }
 
 .form__headline {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  margin-left: 0.65em; }
 
 .form__div {
   padding: 1em; }
@@ -839,9 +838,12 @@ h1 {
   cursor: pointer;
   color: white;
   background-color: #5c8dffe0; }
+  .form__btn:link, .form__btn:visited {
+    transition: all 0.2s; }
   .form__btn:hover, .form__btn:active {
-    padding: 1rem;
-    background-color: rgba(220, 102, 102, 0.9); }
+    padding: 1em;
+    background-color: rgba(220, 102, 102, 0.9);
+    transform: translateY(-3px); }
 
 .about {
   margin-top: 12rem; }
