@@ -501,14 +501,10 @@
 
 			<div class="contacts__form form">
 				<h3 class="form__headline">ПИШИТЕ МНЕ</h3>
-				<form
-					action="mailto:molotsky.io@gmail.com"
-					method="POST"
-					name="EmailForm"
-				>
+				<form name="contact form" method="POST" data-netlify="true">
 					<p>
 						<label class="form__label" for="">Ваше Имя:</label>
-						<input class="form__input" type="text" />
+						<input class="form__input" type="text" name="name" required />
 					</p>
 					<p>
 						<label class="form__label" for="">Ваш Телефон:</label>
@@ -516,12 +512,17 @@
 					</p>
 					<p>
 						<label class="form__label" for="">Ваш Е-мейл:</label>
-						<input class="form__input form__input--email" type="text" />
+						<input
+							class="form__input form__input--email"
+							type="email"
+							name="email"
+							required
+						/>
 					</p>
 
 					<p class="full-width--1">
 						<label class="form__label" for="">Сообщение:</label>
-						<textarea name="" id="" rows="4"></textarea>
+						<textarea name="message" required rows="4"></textarea>
 					</p>
 					<p class="full-width--2">
 						<!-- <input
@@ -529,7 +530,7 @@
 							class="form__btn"
 							value="Отправить Сообщение"
 						/> -->
-						<button class="form__btn">Отправить Сообщение</button>
+						<button class="form__btn" type="submit">Отправить Сообщение</button>
 					</p>
 				</form>
 			</div>
